@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns="https://hdt/1.0.0/" xml:base="https://hdt/1.0.0/" xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" xmlns:crmpe="http://parthenos.d4science.org/CRMext/CRMpe/" 
+xmlns:owl="http://www.w3.org/2002/07/owl#" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+xmlns:nmo="https://dlnarratives.eu/ontology#"
+xml:lang="en">
+	<owl:Ontology rdf:about="https://hdt/1.0.0/">
+		<owl:sameAs rdf:resource="https://hdt/1.0.0/"/>
+	</owl:Ontology>
+	<!-- <https://hdt/1.0.0/> rdf:type owl:Ontology ;
+              owl:versionIRI <https://hdt/1.0.0> ;
+              owl:imports <https://dlnarratives.eu/ontology> ;
+              <http://purl.org/dc/terms/creator> "Franco Niccolucci, Beatrice Markhoff, Maria Theodoridou, Achille Felicetti, Sorin Hermon"@en ;
+              <http://purl.org/dc/terms/license> "CC BY 4.0"@en ;
+              <http://purl.org/dc/terms/publisher> "PIN, University of Tours, ICS-FORTH, Cyprus Institute"@en ;
+              rdfs:comment "An ontology for representing Heritage Digital Twins (HDT), implements the ORE article by Franco Niccolucci, Beatrice Markhoff, Maria Theodoridou, Achille Felicetti and Sorin Hermon, 2023"@en ;
+              rdfs:label "HDT Ontology"@en ;
+              owl:versionInfo "1.0"@en . -->
+
+
+
+
+<!-- 
+#    Object Properties
+-->
+
+
+<!--   https://hdt/1.0.0/HP10_is_told_by -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP10_is_told_by">
+		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+		<rdfs:range rdf:resource="https://dlnarratives.eu/ontology#Narrative"/>
+		<rdfs:comment xml:lang="en">inverse of HP10 tells about</rdfs:comment>
+		<rdfs:label xml:lang="en">HP10 is told by</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP10_tells_about"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP10_tells_about -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP10_tells_about">
+		<rdfs:domain rdf:resource="https://dlnarratives.eu/ontology#Narrative"/>
+		<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+		<rdfs:comment xml:lang="en">This property is intended to identify the specific events (E5) to which a nont:Narrative relates.
+
+Examples: 
+The history of Falconry (nont:Narrative) tells about (HP10) the writing of “De Arte Venandi Cum Avibus” treatise by the Holy Roman Emperor Frederick II (E5).</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété est destinée à identifier les événements spécifiques (E5) qu'une histoire (nont:Narrative) rapporte.
+
+Exemples : 
+L'histoire de la Fauconnerie (non :Narrative) raconte (HP10) l'écriture de \"De Arte Venandi Cum Avibus\", Traité de l'empereur romain germanique Frédéric II (E5)."
+                              </rdfs:comment>
+		<rdfs:label xml:lang="en">HP10 tells about</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP1_has_digital_twin -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP1_has_digital_twin">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC2_Heritage_Digital_Twin"/>
+		<rdfs:comment xml:lang="en">This property links an instance of HC1 Heritage Entity with an instance of its related HC2 Heritage Digital Twin in a given system.
+
+Examples: 
+The Pafos Gate in Nicosia, Cyprus (HC1) has digital twin (HP1) the Pafos Gate digital twin (HC2) created by Cyprus Institute.</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété relie une instance de HC1 Heritage Entity à une instance de son jumeau associé HC2 Digital Twin, dans un système donné.
+
+Exemples : 
+La porte de Pafos (HC1) à Nicosie, Chypre,  (HP1) a pour jumeau numérique (HC2) le jumeau numérique de la porte de Pafos créé par l'Institut de Chypre et stocké sur son serveur.</rdfs:comment>
+		<rdfs:label xml:lang="en">HP1 has digital twin</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP1_is_digital_twin_of"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP1_is_digital_twin_of -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP1_is_digital_twin_of">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC2_Heritage_Digital_Twin"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:comment xml:lang="en">inverse of HP1 has digital twin</rdfs:comment>
+		<rdfs:label xml:lang="en">HP1 is digital twin of</rdfs:label>
+	</rdf:Property>
+
+<!--   https://hdt/1.0.0/HP2_has_story -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP2_has_story">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:range rdf:resource="https://dlnarratives.eu/ontology#Narrative"/>
+		<rdfs:comment xml:lang="en">This property links an instance of HC1 Heritage Entity with an instance of a nont:Narrative that refers to it.
+
+Examples: 
+Falconry has story (HP2) the history of Falconry over the centuries.</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété relie une instance de HC1 Heritage Entity à une instance de nont:Narrative (une histoire) qui y fait référence.
+
+Exemples:
+La fauconnerie a pour histoire (HP2) l'histoire de la fauconnerie au fil des siècles.</rdfs:comment>
+		<rdfs:label xml:lang="en">HP2 has story</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP2_is_story_about"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP2_is_story_about -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP2_is_story_about">
+		<rdfs:domain rdf:resource="https://dlnarratives.eu/ontology#Narrative"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:comment xml:lang="en">inverse of HP2 has story.</rdfs:comment>
+		<rdfs:label xml:lang="en">HP2 is story about</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP3_has_digital_twin_component -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP3_has_digital_twin_component">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC2_Heritage_Digital_Twin"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC2_Heritage_Digital_Twin"/>
+		<rdfs:comment xml:lang="en">inverse of HP3 is digital twin component of</rdfs:comment>
+		<rdfs:label xml:lang="en">HP3 has digital twin component</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP3_is_digital_twin_component_of"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP3_is_digital_twin_component_of -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP3_is_digital_twin_component_of">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC2_Heritage_Digital_Twin"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC2_Heritage_Digital_Twin"/>
+		<rdfs:comment xml:lang="en">This property associates an instance of HC2 Heritage Digital Twin with another HC2 of which is component. The term ‘component’ here is not limited to physical or geographical relationships (see examples), but encompasses any kind of main-associated relationship.
+
+Examples: 
+The HC2 Digital Twin of Pafos Gate in Nicosia (Cyprus) HP3 is a digital twin component of the HC2 Digital Twin of Nicosias’ City Walls.
+The HC2 Digital Twin of the “Cento Camini” Medici Villa in Artimino (Florence) HP3 is a digital twin component of the HC2 Digital Twin of the UNESCO WHS Medici Villas in Tuscany.
+The HC2 Digital Twin of Vichy is a HP3 digital twin component of the HC2 Digital Twin of the UNESCO WHS The Great Spa Towns of Europe
+The HC2 Digital Twin of the “Basilica of San Salvatore in Spoleto, Italy” is a HP3 digital twin component of the HC2 Digital Twin of “Spoleto”, which is a HP3 digital twin component of the UNESCO WHS “Longobards in Italy. Places of Power”"@en ;
+                                              rdfs:label "HP3 is digital twin component of</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété associe une instance de HC2 Heritage Digital Twin à un autre HC2 dont elle est composant. Le terme «composant» ici ne se limite pas aux relations physiques ou géographiques (voir exemples), mais englobe tout type de relation principal-associé.
+
+Exemples : 
+jumeau numérique HC2 de Pafos Gate à Nicosie (Chypre) HP3 is a digital twin component of jumeau numérique HC2 des murs de la ville de Nicosie.
+jumeau numérique HC2 de la Villa Médicis « Cento Camini » à Artimino (Florence) HP3 HP3 is a digital twin component of jumeau numérique HC2 des villas Médicis en Toscane, patrimoine mondial UNESCO.
+jumeau numérique HC2 de Vichy HP3 is a digital twin component of jumeau numérique HC2 des grandes villes thermales d'Europe, patrimoine mondial UNESCO.
+jumeau numérique HC2 de la \"Basilique de San Salvatore à Spoleto, Italie\" HP3 is a digital twin component of jumeau numérique HC2 de \"Spoleto\" / HP3 is a digital twin component of patrimoine mondial UNESCO « Les Lombards en Italie. Lieux de pouvoir ».</rdfs:comment>
+		<rdfs:label xml:lang="en">HP2 is story about</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP4_is_narrated_through -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP4_is_narrated_through">
+		<rdfs:domain rdf:resource="https://dlnarratives.eu/ontology#Narrative"/>
+		<rdfs:range rdf:resource="https://dlnarratives.eu/ontology#Narration"/>
+		<rdfs:comment xml:lang="en">inverse of HP4 narrates</rdfs:comment>
+		<rdfs:label xml:lang="en">HP4 is narrated through</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP4_narrates"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP4_narrates -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP4_narrates">
+		<rdfs:domain rdf:resource="https://dlnarratives.eu/ontology#Narration"/>
+		<rdfs:range rdf:resource="https://dlnarratives.eu/ontology#Narrative"/>
+		<rdfs:comment xml:lang="en">This property links an instance of nont:Narration with an instance of a nont:Narrative which has this narration. It is similar to the nont:hasNarration property, but is not a subproperty of crm:P148 has
+component.
+
+Examples: 
+The “De Arte Venandi Cum Avibus” treatise by the Holy Roman Emperor Frederick II narrates (HP4) the history of Falconry.</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété lie une instance de nont:Narration avec une instance de nont:Narrative dont elle est la narration. Elle est similaire à la propriété nont:hasNarration, mais n'est pas une sous-propriété de crm:P148 has
+composant.
+
+Exemples : Le traité « De Arte Venandi Cum Avibus » du Saint Empereur romain Frédéric II raconte (HP4) l'histoire de la fauconnerie.</rdfs:comment>
+		<rdfs:label xml:lang="en">HP4 narrates</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP5_has_intangible_aspect -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP5_has_intangible_aspect">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC3_Tangible_Aspect"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC4_Intangible_Aspect"/>
+		<rdfs:comment xml:lang="en">This property associates an instance of HC3 Tangible Aspect with its intangible aspects (HC4), i.e. the cultural, social and historical value it incorporates.
+
+Examples: 
+The “Theotokos of Vladimir” (HC3) icon HP5 has intangible aspect the secular veneration that is addressed to it (HC4).
+The UNESCO WHS site “Routes of Santiago de Compostela” (HC3) has intangible aspect (HP5) pilgrimage to Santiago (HC4).</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété associe une instance de HC3 Tangible Aspect à ses aspects immatériels (HC4), c'est-à-dire les valeurs culturelle, sociale et historique qu'elle intègre.
+
+Exemples : 
+L'icône HP5 \"Theotokos of Vladimir\" (HC3) HP5 has intangible aspect la vénération séculière qui lui est adressée (HC4).
+Le patrimoine mondial UNESCO « Chemins de Saint Jacques de Compostelle » (HC3) HP5 has intangible aspect le pèlerinage à Saint-Jacques (HC4).</rdfs:comment>
+		<rdfs:label xml:lang="en">HP5 has intangible aspect</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP5_is_intangible_aspect_of"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP5_is_intangible_aspect_of -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP5_is_intangible_aspect_of">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC4_Intangible_Aspect"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC3_Tangible_Aspect"/>
+		<rdfs:comment xml:lang="en">inverse of HP5 has tangible aspect</rdfs:comment>
+		<rdfs:label xml:lang="en">HP5 is intangible aspect of</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP6_event_is_manifestation_of -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP6_event_is_manifestation_of">
+		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC4_Intangible_Aspect"/>
+		<rdfs:comment xml:lang="en">inverse of HP6 has manifestation event</rdfs:comment>
+		<rdfs:label xml:lang="en">HP6 event is manifestation of</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP6_has_manifestation_event"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP6_has_manifestation_event -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP6_has_manifestation_event">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC4_Intangible_Aspect"/>
+		<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+		<rdfs:comment xml:lang="en">This property associates an instance of HC4 Intangible Aspect with the instances of the crm:E5 Event (or of the unique and specific crm:E5 Event) through which the intangible entity manifests itself in the physical world.
+
+Examples: 
+The Palio di Siena (HC4) has manifestation event (HP6) the historical horse race that was held in Siena on 17/8/2022 (E5)</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété associe une instance de HC4 Intangible Aspect aux instances de crm:E5 Event (ou à l'événement crm:E5 unique et spécifique) par lequel l'entité immatérielle se manifeste dans le monde physique.
+
+Exemples: 
+Le Palio di Siena (HC4) HP6 has manifestation event la course de chevaux historique qui s'est tenue à Sienne le 17/8/2022 (E5)</rdfs:comment>
+		<rdfs:label xml:lang="en">HP6 has manifestation event</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP7_is_manifestation_of -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP7_is_manifestation_of">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC3_Tangible_Aspect"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC4_Intangible_Aspect"/>
+		<rdfs:comment xml:lang="en">This property associates instances of HC3 Tangible Aspect with the HC4 Intangible Aspect of which they are the manifestation in the physical world.
+
+Examples: 
+The set of devotional graffiti engraved on the walls of the Church of the Holy Sepulchre in Jerusalem (HC3) is the manifestation of (HP7) the pilgrimage of which the church is the final destination (HC4).</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété associe des instances de HC3 Tangible Aspect avec l'Aspect Immatériel HC4 dont elles sont des manifestations dans le monde physique.
+
+Exemples :
+L'ensemble de graffitis dévotionnels gravés sur les murs de l'église du Saint-Sépulcre à Jérusalem (HC3) HP7 is manifestation of le pèlerinage dont l'église est la destination finale (HC4).</rdfs:comment>
+		<rdfs:label xml:lang="en">HP7 is manifestation of</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP7_is_manifested_by"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP7_is_manifested_by -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP7_is_manifested_by">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC4_Intangible_Aspect"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC3_Tangible_Aspect"/>
+		<rdfs:comment xml:lang="en">inverse of HP7 is manifestation of</rdfs:comment>
+		<rdfs:label xml:lang="en">HP7 is manifested by</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP8_document_used_for_narration -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP8_document_used_for_narration">
+		<rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E31_Document"/>
+		<rdfs:range rdf:resource="https://dlnarratives.eu/ontology#Narration"/>
+		<rdfs:comment xml:lang="en">inverse of HP8 is narrated in document</rdfs:comment>
+		<rdfs:label xml:lang="en">HP8 document used for narration</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP8_is_narrated_in_document"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP8_is_narrated_in_document -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP8_is_narrated_in_document">
+		<rdfs:domain rdf:resource="https://dlnarratives.eu/ontology#Narration"/>
+		<rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E31_Document"/>
+		<rdfs:comment xml:lang="en">This property associates an instance of nont:Narration with instances of E31 Document used to implement it.
+
+Examples: 
+The “De Arte Venandi Cum Avibus” treatise by the Holy Roman Emperor Frederick II (nont:Narration) is narrated in document (HP8) the “MS. Lat. 419” manuscript , now in the library of the University of Bologna E31."@en ;
+                                         rdfs:label "HP8 is narrated in document</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété associe une instance de nont:Narration à des instances de E31 Document utilisées pour la mettre en oeuvre.
+
+Exemples : 
+Le traité « De Arte Venandi Cum Avibus » de l'empereur romain germanique Frédéric II (nont:Narration) HP8 is narrated in document le \"MS. Lat. 419\" manuscrit, actuellement à la bibliothèque de l'Université de Bologne E31.</rdfs:comment>
+		<rdfs:label xml:lang="en">HP8 is narrated in document</rdfs:label>
+	</rdf:Property>
+
+
+<!--   https://hdt/1.0.0/HP9_has_visual_representation -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP9_has_visual_representation">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC7_Digital_Visual_Object"/>
+		<rdfs:comment xml:lang="en">This property associates an instance of HC1 Heritage Entity with instances of HC7 Digital Visual Object in which it is represented.
+
+Examples: 
+The Pisa Leaning Tower (HC1) has visual representation (HP9) the Europeana digital version of the paper picture of the Pisa Leaning Tower taken by Paolo Monti in 1960 (HC7)
+https://www.europeana.eu/it/item/9200369/webclient_DeliveryManager_pid_6363979_custom_att_2_simple_viewer</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette propriété associe une instance de HC1 Heritage Entity à des instances de HC7 Digital Visual Object dans lequel elle est représentée.
+
+Exemples : 
+La tour de Pise (HC1) HP9 has visual representation la version numérique Europeana de la photo papier de la tour de Pise prise par Paolo Monti en 1960 (HC7)
+https://www.europeana.eu/it/item/9200369/webclient_DeliveryManager_pid_6363979_custom_att_2_simple_viewer</rdfs:comment>
+		<rdfs:label xml:lang="en">HP9 has visual representation</rdfs:label>
+		<owl:inverseOf rdf:resource="https://hdt/1.0.0/HP9_is_visual_representation_of"/>
+	</rdf:Property>
+	
+
+
+<!--   https://hdt/1.0.0/HP9_is_visual_representation_of -->
+<rdf:Property rdf:about="https://hdt/1.0.0/HP9_is_visual_representation_of">
+		<rdfs:domain rdf:resource="https://hdt/1.0.0/HC7_Digital_Visual_Object"/>
+		<rdfs:range rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:comment xml:lang="en">inverse of HP9 has visual representation</rdfs:comment>
+		<rdfs:label xml:lang="en">HP9 is visual representation of</rdfs:label>
+	</rdf:Property>
+
+
+
+
+
+<!-- 
+#    Classes
+-->
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+	<rdfs:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+	
+	
+<!--   https://hdt/1.0.0/HDT_Entity -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HDT_Entity">
+		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+		<!--    rdfs:comment "Cette classe n'a pas de propriété (entrante ou sortante), et ne doit pas être utilisée dans les graphes de connaissances. 
+Elle n'existe que comme nom de \"module\", pour désigner les classes qui appartiennent à l'ontologie HDT. 
+Toutes les classes qui appartiennent à l'ontologie HDT sont des sous-classes de E1_CRM_Entity, donc l'ajout de cette classe intermédiaire n'a pas d'influence sur les tâches de raisonnement."@fr ,
+                                     "This class has no (in or out) property and must not be used in knowledge graphs. 
+It is here only as a \"module\" name, to denote the classes that belong to the HDT ontology. 
+All classes that belong to the HDT ontology are subclasses of E1_CRM_Entity, so, adding this intermediary class does not have influence on reasonning tasks."@en ;-->
+		<rdfs:label xml:lang="en">HDT Entity</rdfs:label>
+	</rdfs:Class>
+	
+	
+<!--   https://hdt/1.0.0/HC1_Heritage_Entity -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC1_Heritage_Entity">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HDT_Entity"/>
+		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"/>
+		<rdfs:comment xml:lang="en">This class comprises tangible and intangible entities of the real-world regarded as valuable because of their contribution to society, knowledge and/or culture. Instances of HC1 Heritage Entity may refer to real assets of any nature: physical, both movable and immovable, immaterial, or born digital. They can also refer to cultural events, traditions and practices, typical of the intangible heritage, and can be used to describe their features and their extent in space and time. In the case of events, we can create instances of event types (to be refined). An instance of HC1 can be considered as the entry point for inferring the content of its corresponding HC2 instance, even if crm:P148 has component property can be also used for denoting HC2’s components.
+
+Examples: 
+the Knossos Palace, part of the Knossos WH archaeological site
+the Pafos Gate in Nicosia
+the “Palio di Siena”
+the Florence Historical Centre, a WH Site
+the Stonehenge Complex, a WH site
+the Bauhaus style.</rdfs:comment>
+		<rdfs:comment xml:lang="fr">Cette classe comprend les entités matérielles et immatérielles du monde réel considérées comme patrimoine en raison de leur contribution à la société, à la connaissance et/ou à la culture. Les instances de HC1 Heritage Entity peuvent représenter des biens réels de toute nature : physiques, à la fois mobiles et inamovibles, intangibles, ou nés numériques. Elles peuvent également représenter des événements culturels, des traditions et des pratiques, typiques du patrimoine immatériel, et peuvent être utilisées pour décrire leurs caractéristiques et leur étendue dans l'espace et le temps. Dans le cas des événements, nous pouvons créer des instances de types d'événements (à affiner). Une instance de HC1 peut être considérée comme le point d'entrée pour inférer le contenu de son instance HC2 correspondante, même si crm:P148 a propriété de composant peut également être utilisée pour dénoter les composants de HC2.
+
+Exemples : 
+le palais de Knossos, qui fait partie du site archéologique de Knossos (patrimoine mondial)
+la porte de Pafos à Nicosie
+le \"Palio di Siena\" (le palais de Sienne)
+le centre historique de Florence, un site du patrimoine mondial
+le complexe de Stonehenge, un site du patrimoine mondial
+le style Bauhaus.</rdfs:comment>
+		<rdfs:label xml:lang="en">HC1 Heritage Entity</rdfs:label>
+	</rdfs:Class>  
+
+
+
+<!--   https://hdt/1.0.0/HC2_Heritage_Digital_Twin -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC2_Heritage_Digital_Twin">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HDT_Entity"/>
+		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"/>
+		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+		<!-- rdfs:comment "La classe est constituée des informations disponibles dans un système donné et relatives à une entité patrimoniale HC1 Heritage Entity. Ces informations forment le jumeau numérique patrimonial de cette entité patrimoniale. Chaque entité patrimoniale instance de HC1 Heritage Entity est liée à une instance de HC2 Heritage Digital Twin, qui fournit une archive de l'histoire documentée de cette entité patrimoniale. Elle comprend des représentations numériques de l'entité patrimoniale (par exemple, des modèles 3D, des images, des vidéos), des descriptions textuelles (par exemple, des documents textuels numériques, récits ou histoires), des informations sur les effets des événements (par exemple, tremblements de terre, inondations, etc.) qui ont influencé ou modifié l'état de l'entité patrimoniale de quelque façon que ce soit, et des activités de (restauration, de conservation, etc.) qui ont été ou sont menées sur cette entité patrimoniale.
+
+Exemples : 
+le jumeau numérique patrimonial (JNP) de la Tour de Pise
+le JNP de la fontaine de Neptune à Bologne
+le JNP du palais de Knossos
+le JNP de la porte de Pafos à Nicosie
+le JNP du \"Palio di Siena\" (Palais de Sienne)
+le JNP du Centre historique de Florence"@fr ,
+                                                    "The class consists of the information available in a given system and pertaining to an HC1 Heritage Entity. Every instance of HC1 Heritage Entity is linked to one instance of HC2 Heritage Digital Twin, which provides an archive of the documented history of the corresponding HC1 Heritage Entity. It includes digital representations of that Heritage Entity (e.g. 3D models, images, videos), textual descriptions (e.g. digital documents, narrations or stories), information of the effects on the related HC1
+Heritage Entity of events that influenced or/and are related in any way to its state of (e.g. earthquakes, floods etc.) and of activities (e.g. restorations, conservations etc.) carried out on it.
+
+Examples: 
+the HDT of Pisa Leaning Tower
+the HDT of the Neptune Fountain in Bologna
+the HDT of Knossos Palace
+the HDT of the Pafos Gate in Nicosia
+the HDT of the “Palio di Siena”
+the HDT of the Florence Historical Centre"@en ;-->
+		<rdfs:label xml:lang="en">HC2 Heritage Digital Twin.</rdfs:label>
+	</rdfs:Class>  
+
+<!--   https://hdt/1.0.0/HC3_Tangible_Aspect -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC3_Tangible_Aspect">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+		<!-- rdfs:comment "Cette classe comprend les entités tangibles et matérielles du monde réel, à la fois mobiles (par exemple, les objets archéologiques, artistiques et culturels) et immobilières (par exemple, le patrimoine bâti comme les monuments, les bâtiments, les villes et autres complexes), considérées comme patrimoines en raison de leur contribution à la société, la connaissance et/ou la culture. Le terme « tangible » dans le nom de cette classe n'exclut pas que ses instances possèdent également un aspect intangible, qui est spécifié par la propriété HP5 has intangible aspect.
+
+Exemples:
+la Fontaine de Neptune à Bologne (Italie)
+la tour de Pise, patrimoine mondial de l'UNESCO
+la Victoire de Samothrace du Musée du Louvre à Paris (France)"@fr ,
+                                              "This class comprises tangible, material entities of the real-world, both movable (e.g. archaeological, artistic and cultural objects) and immovable (e.g., built heritage like monuments, buildings, cities and other complexes), regarded as valuable because of their contribution to society, knowledge and/or culture. The “tangible” term in the name of this class does not exclude that its instances also possess an intangible aspect, which is specified through the HP5 has intangible aspect property.
+
+Examples: 
+the Neptune Fountain in Bologna (Italy)
+the Pisa Leaning Tower, a UNESCO World Heritage (WH) Site
+the Nike of Samothrace of the Louvre Museum in Paris (France)"@en ; -->
+		<rdfs:label xml:lang="en">HC3 Tangible Aspect</rdfs:label>
+	</rdfs:Class>
+
+
+<!--   https://hdt/1.0.0/HC4_Intangible_Aspect -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC4_Intangible_Aspect">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HC1_Heritage_Entity"/>
+		<rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+		<!--    rdfs:comment "Cette classe recouvre les événements culturels, traditions et pratiques ayant une signification sociale, historique et culturelle particulière, incluant les pratiques corporelles, mémoires et traditions orales, à propos d'événements, de choses et de gens.
+
+Exemples :
+Le régime méditéranéen
+La fauconnerie
+La musique traditionnelle Rebetiko"@fr ,
+                                                "This class comprises cultural events, traditions and practices having particular social, historical and cultural significance, including practices and expressions, memories and oral traditions about events, things, people.
+
+Examples: 
+the Mediterranean diet
+Falconry
+the Rebetiko music tradition"@en ;-->
+		<rdfs:label xml:lang="en">HC4 Intangible Aspect</rdfs:label>
+	</rdfs:Class>
+
+
+<!--   https://hdt/1.0.0/HC5_Digital_Representation -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC5_Digital_Representation">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HDT_Entity"/>
+		<rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object"/>
+		<!--           rdfs:comment "Cette classe comprend les représentations virtuelles numériques d'une entité patrimoniale HC1 telles que les textes électroniques,
+images, éléments audio ou vidéo, modèles 3D, etc., qui sont documentés comme des unités individuelles.
+
+Exemples : 
+la version numérique des « Vies » de Vasari
+la vidéo https://www.youtube.com/watch?v=P1Uv4Zf5xKk
+le modèle 3D de balayage laser de Pafos Gate"@fr ,
+                                                     "This class comprises the digital virtual representations of an HC1 Heritage Entity such as e-texts, images, audio or video items, 3D models, etc., that are documented as single units.
+
+Examples: 
+the digital version of Vasari’s “Vite”
+the video https://www.youtube.com/watch?v=P1Uv4Zf5xKk
+the Pafos Gate laser scanning 3D model"@en ;-->
+		<rdfs:label xml:lang="en">HC5 Digital Representation</rdfs:label>
+	</rdfs:Class>
+
+
+<!--   https://hdt/1.0.0/HC6_Digital_Heritage_Document -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC6_Digital_Heritage_Document">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HC5_Digital_Representation"/>
+		<!--      rdfs:comment "Cette classe comprend des parties ou des collections de documents numériques, non visuels, qu'ils soient des créations directement numériques ou des numérisations de documents physiques du monde réel, contenant généralement des informations textuelles ou quantitatives (numériques) concernant une entité HC1 et destinée à faire partie du jumeau HC2. La documentation de ce type peut comprendre des données scientifiques, des résultats de recherche et des interprétations,
+ainsi que des informations historiques et culturelles, y compris des descriptions textuelles liées à la nature, aux conditions, au positionnement et à l'ensemble des événements dans lesquels l'entité culturelle a été impliquée, plus les acteurs qui y ont participé."@fr ,
+                                                        "This class comprises pieces or collections of digital, non-visual documents, either born-digital or digitised from physical, real-world ones, typically containing textual or numerical information regarding an HC1 Heritage Entity and intended to become part of the related HC2 Heritage Digital Twin. Documentation of this kind may include scientific data, research results and interpretation, as well as historical and cultural information, including textual descriptions related to the nature, conditions, positioning and to the whole set of events in which the cultural entity has been involved and the actors who have participated in them."@en ;
+                                           -->
+		<rdfs:label xml:lang="en">HC6 Digital Heritage Document</rdfs:label>
+	</rdfs:Class>
+
+
+<!--   https://hdt/1.0.0/HC7_Digital_Visual_Object -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC7_Digital_Visual_Object">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HC5_Digital_Representation"/> 
+                                      <!-- rdfs:comment "Cette classe comprend des objets visuels numériques, tels que des photos et des vidéos, mais également des images spéciales telles que des images radios, des spectres d'analyses chimiques et physiques, etc., destinés à faire partie du jumeau HC2 d'une entité patrimoniale HC1. Une documentation numérique de ce type peut être créée directement numériquement ou être le résultat d'une numérisation à partir d'objets physiques (tels que des photographies sur papier, des dessins sur papier ou sur roche, etc.). Les modèles de réalité virtuelle (VR) et de réalité augmentée (AR), ainsi que d'autres types d'artefacts numériques visuels se rapportant à une entité patrimoniale HC1 sont également des objets visuels numériques particulièrement pertinents. Les modèles VR et AR s'appuient sur des modèles 3D de l'entité patrimoniale, mais peuvent y ajouter ou en supprimer des parties, ou nécessiter des données numériques supplémentaires comme pour la réalité augmentée, ils doivent donc être catalogués séparément des modèles 3D.
+
+Exemples : 
+La version numérique Europeana de la photo papier de la tour de Pise prise par Paolo Monti en 1960
+(https://www.europeana.eu/it/item/9200369/webclient_DeliveryManager_pid_6363979_custom_att_2_simple_viewer)."@fr ,
+                                                    "This class comprises digital visual objects, such as photos and videos, but also special imagery such as X-ray images, spectra of chemical and physical analyses, and so on, intended to become part of the HC2 Heritage Digital Twin of an HC1 Heritage Entity. Digital documentation of this kind can be born digital or digitised from physical objects (such as paper photographs, drawings and so on). Particularly relevant digital visual objects are also Virtual Reality (VR) and Augmented Reality (AR) models, other types of visual digital artefacts pertaining to a HC1 Heritage Entity. Both VR and AR models rely on 3D models of the related heritage entity, but may add or remove parts of it, or require further digital input as in AR, so they should be catalogued separately from 3D models.
+
+Examples: 
+The Europeana digital version of the paper picture of the Pisa Leaning Tower taken by Paolo Monti in 1960
+(https://www.europeana.eu/it/item/9200369/webclient_DeliveryManager_pid_6363979_custom_att_2_simple_viewer)."@en ;-->
+		<rdfs:label xml:lang="en">HC7 Digital Visual Object</rdfs:label>
+	</rdfs:Class>
+
+
+<!--   https://hdt/1.0.0/HC8_3D_Model -->
+<rdfs:Class rdf:about="https://hdt/1.0.0/HC8_3D_Model">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HC5_Digital_Representation"/>
+		<!--     rdfs:comment "Cette classe est utilisée pour rendre en détail le modèle 3D d'une entité patrimoniale HC1 Heritage Entity, et est conçue comme un crmdig:D1 particulier, ayant son identité définie et résultant d'opérations telles que
+numérisation, acquisition, traitement et autres actions typiques du monde de la modélisation tridimensionnelle (par exemple, scan 3D, rendu en fil-de-fer, etc.). Les caractéristiques particulières d'un modèle 3D (par exemple, ses type, format, résolution, taille, etc.) et ses relations avec la série d'activités réalisées pour sa création et sa manipulation sont modélisées à travers les propriétés héritées de sa superclasse HC5, qui
+hérite elle-même de crmdig:D1 Digital Object, et à travers les autres classes et propriétés de CRMdig.
+
+Exemples : 
+Le modèle 3D de la Fontaine de Neptune réalisé par l'ISTI-CNR (Pise, Italie) dans le cadre de la documentation utilisée pour la restauration de la Fontaine de Neptune à Bologne (Italie). https://www.cnr.it/en/focus/074-43/3d-supported-restoration-the-neptune-fountain-in-bologna"@fr ,
+                                       "This class is used for rendering in detail the 3D model of HC1 Heritage Entity and intended as a particular crmdig:D1 Digital Object having its definite identity and resulting from operations such as digitization, acquisition, processing and other actions typical of the three-dimensional modelling world (e.g., 3D scanning, wireframe modelling and so on). The particular features of a 3D model (e.g., its type, format, resolution, size, etc.) and its relationships with the series of activities carried out for its
+creation and manipulation are modelled through the properties inherited from its superclass HC5, which in turn inherits from crmdig:D1 Digital Object, and through the other classes and properties of CRMdig.
+
+Examples: 
+The 3D model of the Neptune Fountain produced by ISTI-CNR (Pisa, Italy) as part of the documentation used for the restoration of the Neptune Fountain in Bologna (Italy). https://www.cnr.it/en/focus/074-43/3d-supported-restoration-the-neptune-fountain-in-bologna"@en ;
+                    -->
+		<rdfs:label xml:lang="en">HC8 3D Model</rdfs:label>
+	</rdfs:Class>
+
+
+
+
+
+
+<!--   https://dlnarratives.eu/ontology#Narration -->
+<rdfs:Class rdf:about="https://dlnarratives.eu/ontology#Narration">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HDT_Entity"/>
+	</rdfs:Class>
+
+
+<!--   https://dlnarratives.eu/ontology#Narrative -->
+<rdfs:Class rdf:about="https://dlnarratives.eu/ontology#Narrative">
+		<rdfs:subClassOf rdf:resource="https://hdt/1.0.0/HDT_Entity"/> 
+
+</rdfs:Class>
+</rdf:RDF>
