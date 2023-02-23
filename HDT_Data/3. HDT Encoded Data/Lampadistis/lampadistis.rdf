@@ -1,0 +1,184 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:crmba="http://www.ics.forth.gr/isl/CRMba/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:crmdig="http://www.ics.forth.gr/isl/CRMdig/"
+    xmlns:crminf="http://www.cidoc-crm.org/cidoc-crm/CRMinf/"
+    xmlns:crmpe="http://parthenos.d4science.org/CRMext/CRMpe/"
+    xmlns:hdtex="https://hdt.examples/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:hdt="https://hdt/1.0.0/"
+    xmlns:crmsci="http://www.ics.forth.gr/isl/CRMsci/"
+    xmlns:nmo="https://dlnarratives.eu/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <hdt:HC3_Tangible_Aspect rdf:about="https://hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266">
+    <hdt:HP1_has_digital_twin>
+      <hdt:HC2_Heritage_Digital_Twin rdf:about="http://twin_hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266">
+        <rdfs:label xml:lang="en">Digital twin of Heritage Entity lampadistis_1509, Monastery of Agios Ioannis Lampadistis</rdfs:label>
+      </hdt:HC2_Heritage_Digital_Twin>
+    </hdt:HP1_has_digital_twin>
+    <crm:P46_is_composed_of>
+      <crm:E19_Physical_Object rdf:about="https://hdt.examples/BuitWork/86FC9253-19F0-37FF-8E92-88E33481E52F">
+        <crm:P56_bears_feature>
+          <crm:E26_Physical_Feature rdf:about="urn:uuid:bfeb4730-0d21-48bb-9fc2-9772a3d4a1ac">
+            <crm:P138i_has_representation>
+              <crm:E36_Visual_Item rdf:about="https://hdt.examples/Image/B0CD544D-2804-35B3-AD32-1D3F0F143ED6">
+                <rdfs:label xml:lang="en">lampadistis_1509.jpg</rdfs:label>
+              </crm:E36_Visual_Item>
+            </crm:P138i_has_representation>
+            <crm:P124i_was_transformed_by>
+              <crm:E81_Transformation rdf:about="https://hdt.examples/Event/Transformation/Graffiti%2C%20lampadistis_1509">
+                <crm:P4_has_time-span>
+                  <crm:E52_Time-Span rdf:about="https://hdt.examples/Time-Span/06FAB324-AC65-3529-A8D8-3789AD812296">
+                    <rdfs:label xml:lang="en">18th Century</rdfs:label>
+                  </crm:E52_Time-Span>
+                </crm:P4_has_time-span>
+                <rdfs:label xml:lang="en">Graffiti, lampadistis_1509</rdfs:label>
+              </crm:E81_Transformation>
+            </crm:P124i_was_transformed_by>
+            <crm:P3_has_note xml:lang="en">Karamanlika Pilgrims Graffiti</crm:P3_has_note>
+            <crm:P2_has_type>
+              <crm:E55_Type rdf:about="https://hdt.examples/Concept/CYI/Graffiti">
+                <skos:prefLabel xml:lang="en">Graffiti</skos:prefLabel>
+              </crm:E55_Type>
+            </crm:P2_has_type>
+            <rdfs:label xml:lang="en">Graffiti, lampadistis_1509</rdfs:label>
+          </crm:E26_Physical_Feature>
+        </crm:P56_bears_feature>
+        <crmba:BP1i_has_section>
+          <crm:E19_Physical_Object rdf:about="https://hdt.examples/MorphBuildingSection/CYI/C33EDCB6-0E27-3FE0-AC48-F550D486E8DA">
+            <crm:P56_bears_feature>
+              <crm:E26_Physical_Feature rdf:about="https://hdt.examples/Object/CYI/A461AA67-A74E-31F0-A964-C94BAF02DAF4">
+                <crm:P124i_was_transformed_by>
+                  <crm:E81_Transformation rdf:about="https://hdt.examples/Event/Transformation/Frescoes%2C%20lampadistis_1509">
+                    <crm:P4_has_time-span>
+                      <crm:E52_Time-Span rdf:about="https://hdt.examples/Time-Span/D9B49888-08D8-3780-BDD9-AF4D7A75C0ED">
+                        <rdfs:label xml:lang="en">15th Century</rdfs:label>
+                      </crm:E52_Time-Span>
+                    </crm:P4_has_time-span>
+                    <rdfs:label xml:lang="en">Frescoes, lampadistis_1509</rdfs:label>
+                  </crm:E81_Transformation>
+                </crm:P124i_was_transformed_by>
+                <crm:P3_has_note xml:lang="en">Wall Frescoes of the Latin Chapel</crm:P3_has_note>
+                <crm:P2_has_type>
+                  <crm:E55_Type rdf:about="https://hdt.examples/Concept/CYI/Frescoes">
+                    <skos:prefLabel xml:lang="en">Frescoes</skos:prefLabel>
+                  </crm:E55_Type>
+                </crm:P2_has_type>
+                <rdfs:label xml:lang="en">Frescoes, lampadistis_1509</rdfs:label>
+              </crm:E26_Physical_Feature>
+            </crm:P56_bears_feature>
+            <crm:P108i_was_produced_by>
+              <crm:E12_Production rdf:about="https://hdt.examples/Event/Production/Latin%20Chapel">
+                <crm:P4_has_time-span rdf:resource="https://hdt.examples/Time-Span/D9B49888-08D8-3780-BDD9-AF4D7A75C0ED"/>
+                <rdfs:label xml:lang="en">Production of Latin Chapel</rdfs:label>
+              </crm:E12_Production>
+            </crm:P108i_was_produced_by>
+            <rdfs:label xml:lang="en">lampadistis_1509, Latin Chapel</rdfs:label>
+            <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMba/B2_Morphological_Building_Section"/>
+          </crm:E19_Physical_Object>
+        </crmba:BP1i_has_section>
+        <crmba:BP1i_has_section>
+          <crm:E19_Physical_Object rdf:about="https://hdt.examples/MorphBuildingSection/CYI/9890E037-CAB7-39E1-8BCE-FD5F8DD88E46">
+            <crm:P108i_was_produced_by>
+              <crm:E12_Production rdf:about="https://hdt.examples/Event/Production/St.%20John%20Lampadistis%20Chapel">
+                <crm:P4_has_time-span>
+                  <crm:E52_Time-Span rdf:about="https://hdt.examples/Time-Span/D5B91FCD-6D7E-3946-AEA0-4C530A798657">
+                    <rdfs:label xml:lang="en">12th Century</rdfs:label>
+                  </crm:E52_Time-Span>
+                </crm:P4_has_time-span>
+                <rdfs:label xml:lang="en">Production of St. John Lampadistis Chapel</rdfs:label>
+              </crm:E12_Production>
+            </crm:P108i_was_produced_by>
+            <rdfs:label xml:lang="en">lampadistis_1509, St. John Lampadistis Chapel</rdfs:label>
+            <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMba/B2_Morphological_Building_Section"/>
+          </crm:E19_Physical_Object>
+        </crmba:BP1i_has_section>
+        <crmba:BP1i_has_section>
+          <crm:E19_Physical_Object rdf:about="https://hdt.examples/MorphBuildingSection/CYI/5A97D8A3-E4F2-375D-92B5-67B638120B4F">
+            <crm:P108i_was_produced_by>
+              <crm:E12_Production rdf:about="https://hdt.examples/Event/Production/St.%20Herakleios%20Chapel">
+                <crm:P4_has_time-span>
+                  <crm:E52_Time-Span rdf:about="https://hdt.examples/Time-Span/ABD81BB6-A530-3674-A30B-EC1072A822F1">
+                    <rdfs:label xml:lang="en">11th Century</rdfs:label>
+                  </crm:E52_Time-Span>
+                </crm:P4_has_time-span>
+                <rdfs:label xml:lang="en">Production of St. Herakleios Chapel</rdfs:label>
+              </crm:E12_Production>
+            </crm:P108i_was_produced_by>
+            <rdfs:label xml:lang="en">lampadistis_1509, St. Herakleios Chapel</rdfs:label>
+            <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMba/B2_Morphological_Building_Section"/>
+          </crm:E19_Physical_Object>
+        </crmba:BP1i_has_section>
+        <rdf:type rdf:resource="https://hdt/1.0.0/HC3_Tangible_Aspect"/>
+        <crm:P2_has_type>
+          <crm:E55_Type rdf:about="https://hdt.examples/Concept/Katholicon">
+            <skos:prefLabel xml:lang="en">Katholicon</skos:prefLabel>
+          </crm:E55_Type>
+        </crm:P2_has_type>
+        <rdfs:label>Katholicon</rdfs:label>
+        <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMba/B1_Built_Work"/>
+      </crm:E19_Physical_Object>
+    </crm:P46_is_composed_of>
+    <crm:P129i_is_subject_of>
+      <hdt:HC8_3D_Model rdf:about="https://dioptra.cyi.ac.cy/sites/360/lampadistis/">
+        <crm:P2_has_type>
+          <crm:E55_Type rdf:about="https://hdt.examples/Concept/360Panoramic">
+            <skos:prefLabel xml:lang="en">360Panoramic</skos:prefLabel>
+          </crm:E55_Type>
+        </crm:P2_has_type>
+        <rdfs:label>https://dioptra.cyi.ac.cy/sites/360/lampadistis/</rdfs:label>
+      </hdt:HC8_3D_Model>
+    </crm:P129i_is_subject_of>
+    <crm:P129i_is_subject_of>
+      <hdt:HC8_3D_Model rdf:about="https://modelier.us.aldryn.io/models/d10a14ee-4192-45b6-b54b-8d11ecd6f70e/v2/embed/">
+        <crm:P2_has_type>
+          <crm:E55_Type rdf:about="https://hdt.examples/Concept/3D">
+            <skos:prefLabel xml:lang="en">3D</skos:prefLabel>
+          </crm:E55_Type>
+        </crm:P2_has_type>
+        <rdfs:label>https://modelier.us.aldryn.io/models/d10a14ee-4192-45b6-b54b-8d11ecd6f70e/v2/embed/</rdfs:label>
+      </hdt:HC8_3D_Model>
+    </crm:P129i_is_subject_of>
+    <hdt:HP5_has_intangible_aspect>
+      <hdt:HC4_Intangible_Aspect rdf:about="https://hdt.examples/Intangible/CYI/4F91939A-64E2-3754-98EB-822C0ACBBEE6">
+        <hdt:HP2_has_story>
+          <nmo:Narrative rdf:about="https://hdt.examples/Narrative/CYI/578A2C69-5359-3D94-B3EA-E7B963B3FCFB">
+            <hdt:HP4_is_narrated_through>
+              <nmo:Narration rdf:about="https://hdt.examples/Narration/CYI/578A2C69-5359-3D94-B3EA-E7B963B3FCFB">
+                <hdt:HP8_is_narrated_in_document>
+                  <crm:E31_Document rdf:about="https://hdt.examples/Document/CYI/95AE6414-9429-3B31-83D9-97615D5B81E6">
+                    <crm:P128i_is_carried_by>
+                      <crm:E18_Physical_Thing rdf:about="https://hdt.examples/Object/CYI/456DC499-2DAA-33A1-BF3E-A86304EB2383">
+                        <crm:P44_has_condition>
+                          <crm:E3_Condition_State rdf:about="https://hdt.examples/CYI/ConditionState/B578B733-CBB7-38FC-AAD2-08314D2C4C2B">
+                            <rdfs:label xml:lang="en">Lost</rdfs:label>
+                          </crm:E3_Condition_State>
+                        </crm:P44_has_condition>
+                        <rdfs:label xml:lang="en">Priest Savvas, Manuscript</rdfs:label>
+                      </crm:E18_Physical_Thing>
+                    </crm:P128i_is_carried_by>
+                    <rdfs:label xml:lang="en">Priest Savvas, Life of St. John Lampadistis, Cyprus, 1640</rdfs:label>
+                  </crm:E31_Document>
+                </hdt:HP8_is_narrated_in_document>
+                <rdfs:label xml:lang="en">The monastery of St. John Lampadistis consists today of a group of buildings built and renovated in different periods.
+While its founding date is unclear, the katholicon (the monastery church), dedicated to Saint Herakleidios, born in the village of Lampadistis and the first bishop of Cyprus, is dated to the 11th century.</rdfs:label>
+              </nmo:Narration>
+            </hdt:HP4_is_narrated_through>
+            <rdfs:label xml:lang="en">Story-Savvas-1640</rdfs:label>
+          </nmo:Narrative>
+        </hdt:HP2_has_story>
+        <rdfs:label xml:lang="en">Life of St. John Lampadistis</rdfs:label>
+      </hdt:HC4_Intangible_Aspect>
+    </hdt:HP5_has_intangible_aspect>
+    <crm:P48_has_preferred_identifier>
+      <crm:E42_Identifier rdf:about="https://hdt.examples/Identifier/lampadistis_1509">
+        <rdfs:label>Identifier lampadistis_1509</rdfs:label>
+      </crm:E42_Identifier>
+    </crm:P48_has_preferred_identifier>
+    <rdfs:label xml:lang="en">Monastery of Agios Ioannis Lampadistis</rdfs:label>
+    <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMba/B1_Built_Work"/>
+  </hdt:HC3_Tangible_Aspect>
+</rdf:RDF>

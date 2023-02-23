@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      source_type="xpath"
+      version="1.0"
+      xsi:noNamespaceSchemaLocation="https://isl.ics.forth.gr/x3ml/schema/x3ml.xsd">
+   <info>
+      <title>St. John Lampadistis Monastery (Digital Twin)</title>
+      <general_description>The monastery of St. John Lampadistis consists today of a group of buildings built and renovated in different periods. While its founding date is unclear, the katholicon (the monastery church), dedicated to Saint Herakleidios, born in the village of Lampadistis and the first bishop of Cyprus, is dated to the 11th century. Among the wall-paintings of the narthex an inscription, dated to the 15th century, describes this church as a “katholiki”. While written sources indicate the monastery was in use until the 19th century, afterwards it has been used as the main church of the village. Apart from the complex of the three churches under one roof, a phenomenon unique for Cyprus, there are other monastic buildings including cells, auxiliary rooms and an oil press. One of the rooms is used today to house icons from the monastery as well as other churches of the village of Kalopanagiotis </general_description>
+      <source>
+         <source_info>
+            <source_schema schema_file="lampadistis.xml" type="xml" version="">lampadistis</source_schema>
+            <namespaces>
+               <namespace prefix="" uri=""/>
+            </namespaces>
+         </source_info>
+      </source>
+      <target>
+         <target_info>
+            <target_schema schema_file="cidoc_crm_v6.2.1-2018April.rdfs"
+                           type="rdfs"
+                           version="">CIDOC CRM</target_schema>
+            <namespaces>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+               <namespace prefix="crm" uri="http://www.cidoc-crm.org/cidoc-crm/"/>
+            </namespaces>
+         </target_info>
+         <target_info>
+            <target_schema schema_file="CRMsci_v1.2.2.rdfs" type="rdfs" version="">CRMsci</target_schema>
+            <namespaces>
+               <namespace prefix="crmsci" uri="http://www.ics.forth.gr/isl/CRMsci/"/>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+            </namespaces>
+         </target_info>
+         <target_info>
+            <target_schema schema_file="CRMpc_v1.0.rdfs" type="rdfs" version="">CRMpc</target_schema>
+            <namespaces>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="crmpc" uri="http://www.cidoc-crm.org/cidoc-crm/"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+            </namespaces>
+         </target_info>
+         <target_info>
+            <target_schema schema_file="CRMinf_v0.7aa.rdfs" type="rdfs" version="">CRMinf_v0.7aa</target_schema>
+            <namespaces>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+               <namespace prefix="crminf" uri="http://www.cidoc-crm.org/cidoc-crm/CRMinf/"/>
+            </namespaces>
+         </target_info>
+         <target_info>
+            <target_schema schema_file="hdt-v1.0.0.rdfs" type="rdfs" version="">hdt-v1.0.0</target_schema>
+            <namespaces>
+               <namespace prefix="nmo" uri="https://dlnarratives.eu/ontology#"/>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="hdt" uri="https://hdt/1.0.0/"/>
+               <namespace prefix="skos" uri="http://www.w3.org/2004/02/skos/core#"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+               <namespace prefix="crmpe" uri="http://parthenos.d4science.org/CRMext/CRMpe/"/>
+               <namespace prefix="crm" uri="http://www.cidoc-crm.org/cidoc-crm/"/>
+            </namespaces>
+         </target_info>
+         <target_info>
+            <target_schema schema_file="CRMdig_v3.2.rdfs" type="rdfs" version="">CRMdig</target_schema>
+            <namespaces>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+               <namespace prefix="crmdig" uri="http://www.ics.forth.gr/isl/CRMdig/"/>
+            </namespaces>
+         </target_info>
+         <target_info>
+            <target_schema schema_file="CRMba_v1.4.rdfs" type="rdfs" version="">CRMba_v1.4</target_schema>
+            <namespaces>
+               <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+               <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+               <namespace prefix="owl" uri="http://www.w3.org/2002/07/owl#"/>
+               <namespace prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+               <namespace prefix="crmba" uri="http://www.ics.forth.gr/isl/CRMba/"/>
+            </namespaces>
+         </target_info>
+      </target>
+      <mapping_info>
+         <mapping_created_by_org/>
+         <mapping_created_by_person/>
+         <in_collaboration_with/>
+      </mapping_info>
+      <example_data_info>
+         <example_data_from/>
+         <example_data_contact_person/>
+         <example_data_source_record/>
+         <generator_policy_info/>
+         <example_data_target_record/>
+         <thesaurus_info/>
+      </example_data_info>
+   </info>
+   <namespaces>
+      <namespace prefix="hdtex" uri="https://hdt.examples/"/>
+   </namespaces>
+   <mappings>
+      <mapping>
+         <domain>
+            <source_node>//heritage_entity</source_node>
+            <target_node>
+               <entity>
+                  <type>crmba:B1_Built_Work</type>
+                  <type>hdt:HC3_Tangible_Aspect</type>
+                  <instance_generator name="ObjectURI-2">
+                     <arg name="arg1" type="constant">CYI</arg>
+                     <arg name="arg2" type="xpath">object_id/text()</arg>
+                  </instance_generator>
+                  <label_generator name="Literal">
+                     <arg name="text" type="xpath">object_name/text()</arg>
+                     <arg name="language" type="constant">en</arg>
+                  </label_generator>
+               </entity>
+            </target_node>
+         </domain>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>object_id</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P48_has_preferred_identifier</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>object_id</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E42_Identifier</type>
+                     <instance_generator name="IdentifierURI">
+                        <arg name="term" type="xpath">text()</arg>
+                     </instance_generator>
+                     <label_generator name="CompositeLabel">
+                        <arg name="term1" type="constant">Identifier</arg>
+                        <arg name="term2" type="xpath">text()</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>object_history</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>hdt:HP5_has_intangible_aspect</relationship>
+                  <entity variable="intangible1">
+                     <type>hdt:HC4_Intangible_Aspect</type>
+                     <instance_generator name="TwoLevelCustomURI">
+                        <arg name="level1" type="constant">Intangible</arg>
+                        <arg name="level2" type="constant">CYI</arg>
+                        <arg name="term" type="xpath">history_source/document_title/text()</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">history_source/document_title/text()</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+                  <relationship>hdt:HP2_has_story</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>object_history</source_node>
+               <target_node>
+                  <entity>
+                     <type>nmo:Narrative</type>
+                     <instance_generator name="NarrativeURI-2">
+                        <arg name="provider" type="constant">CYI</arg>
+                        <arg name="term" type="xpath">@id</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">@id</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>object_representation</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P129i_is_subject_of</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>object_representation</source_node>
+               <target_node>
+                  <entity>
+                     <type>hdt:HC8_3D_Model</type>
+                     <instance_generator name="URIorUUID">
+                        <arg name="text" type="xpath">url/text()</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">url/text()</arg>
+                     </label_generator>
+                     <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                           <type>crm:E55_Type</type>
+                           <instance_generator name="ConceptURI">
+                              <arg name="term" type="xpath">@type</arg>
+                           </instance_generator>
+                           <label_generator name="prefLabel">
+                              <arg name="text" type="xpath">@type</arg>
+                              <arg name="language" type="constant">en</arg>
+                           </label_generator>
+                        </entity>
+                     </additional>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>object_composition/object_part</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P46_is_composed_of</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>object_composition/object_part</source_node>
+               <target_node>
+                  <entity>
+                     <type>crmba:B1_Built_Work</type>
+                     <instance_generator name="OneLevelCustomURI">
+                        <arg name="level1" type="constant">BuitWork</arg>
+                        <arg name="term" type="xpath">@type</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">@type</arg>
+                     </label_generator>
+                     <additional>
+                        <relationship>crm:P2_has_type</relationship>
+                        <entity>
+                           <type>crm:E55_Type</type>
+                           <instance_generator name="ConceptURI">
+                              <arg name="term" type="xpath">@type</arg>
+                           </instance_generator>
+                           <label_generator name="prefLabel">
+                              <arg name="text" type="xpath">@type</arg>
+                              <arg name="language" type="constant">en</arg>
+                           </label_generator>
+                        </entity>
+                     </additional>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+      </mapping>
+      <mapping>
+         <domain>
+            <source_node>//heritage_entity</source_node>
+            <target_node>
+               <entity>
+                  <type>hdt:HC3_Tangible_Aspect</type>
+                  <instance_generator name="UUID"/>
+                  <additional>
+                     <relationship>hdt:HP1_has_digital_twin</relationship>
+                     <entity>
+                        <type>hdt:HC2_Heritage_Digital_Twin</type>
+                        <instance_generator name="URIorUUID">
+                           <arg name="text" type="constant">http://twin_hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266</arg>
+                        </instance_generator>
+                        <label_generator name="CompositeLabel">
+                           <arg name="term1" type="constant">Digital twin of Heritage Entity</arg>
+                           <arg name="term2" type="xpath">concat (object_id/text(), ', ', object_name/text())</arg>
+                           <arg name="language" type="constant">en</arg>
+                        </label_generator>
+                     </entity>
+                  </additional>
+               </entity>
+            </target_node>
+         </domain>
+      </mapping>
+      <mapping>
+         <domain>
+            <source_node>/heritage_entity/object_history</source_node>
+            <target_node>
+               <entity>
+                  <type>nmo:Narrative</type>
+                  <instance_generator name="NarrativeURI-2">
+                     <arg name="provider" type="constant">CYI</arg>
+                     <arg name="term" type="xpath">@id</arg>
+                  </instance_generator>
+                  <label_generator name="Literal">
+                     <arg name="text" type="xpath">@id</arg>
+                     <arg name="language" type="constant">en</arg>
+                  </label_generator>
+               </entity>
+            </target_node>
+         </domain>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>history_description</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>hdt:HP4_is_narrated_through</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>history_description</source_node>
+               <target_node>
+                  <entity variable="narration1">
+                     <type>nmo:Narration</type>
+                     <instance_generator name="NarrationURI-2">
+                        <arg name="provider" type="constant">CYI</arg>
+                        <arg name="term" type="xpath">../../object_history/@id</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">text()</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>history_source</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>hdt:HP4_is_narrated_through</relationship>
+                  <entity variable="narration1">
+                     <type>nmo:Narration</type>
+                     <instance_generator name="UUID"/>
+                  </entity>
+                  <relationship>hdt:HP8_is_narrated_in_document</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>history_source</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E31_Document</type>
+                     <instance_generator name="DocumentURI-2">
+                        <arg name="provider" type="constant">CYI</arg>
+                        <arg name="term" type="xpath">concat(document_author/text(), ', ', document_title/text(), ', ', publication_city/text(), ', ', publication_year/text())</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">concat(document_author/text(), ', ', document_title/text(), ', ', publication_city/text(), ', ', publication_year/text())</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                     <additional>
+                        <relationship>crm:P128i_is_carried_by</relationship>
+                        <entity>
+                           <type>crm:E18_Physical_Thing</type>
+                           <instance_generator name="ObjectURI-2">
+                              <arg name="arg1" type="constant">CYI</arg>
+                              <arg name="arg2" type="xpath">concat (document_author/text(), ', ', @type)</arg>
+                           </instance_generator>
+                           <label_generator name="Literal">
+                              <arg name="text" type="xpath">concat (document_author/text(), ', ', @type)</arg>
+                              <arg name="language" type="constant">en</arg>
+                           </label_generator>
+                           <additional>
+                              <relationship>crm:P44_has_condition</relationship>
+                              <entity>
+                                 <type>crm:E3_Condition_State</type>
+                                 <instance_generator name="TwoLevelCustomURI">
+                                    <arg name="level1" type="constant">CYI</arg>
+                                    <arg name="level2" type="constant">ConditionState</arg>
+                                    <arg name="term" type="xpath">document_status/text()</arg>
+                                 </instance_generator>
+                                 <label_generator name="Literal">
+                                    <arg name="text" type="xpath">document_status/text()</arg>
+                                    <arg name="language" type="constant">en</arg>
+                                 </label_generator>
+                              </entity>
+                           </additional>
+                        </entity>
+                     </additional>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+      </mapping>
+      <mapping>
+         <domain>
+            <source_node>/heritage_entity/object_composition/object_part</source_node>
+            <target_node>
+               <entity>
+                  <type>crmba:B1_Built_Work</type>
+                  <type>hdt:HC3_Tangible_Aspect</type>
+                  <type>crm:E19_Physical_Object</type>
+                  <instance_generator name="UUID"/>
+               </entity>
+            </target_node>
+         </domain>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>object_section</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crmba:BP1i_has_section</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>object_section</source_node>
+               <target_node>
+                  <entity>
+                     <type>crmba:B2_Morphological_Building_Section</type>
+                     <instance_generator name="TwoLevelCustomURI">
+                        <arg name="level1" type="constant">MorphBuildingSection</arg>
+                        <arg name="level2" type="constant">CYI</arg>
+                        <arg name="term" type="xpath">concat(@id, ', ', section_name/text())</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">concat(@id, ', ', section_name/text())</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>decoration</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P56_bears_feature</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>decoration</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E26_Physical_Feature</type>
+                     <instance_generator name="UUID"/>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+      </mapping>
+      <mapping>
+         <domain>
+            <source_node>//decoration</source_node>
+            <target_node>
+               <entity>
+                  <type>crm:E26_Physical_Feature</type>
+                  <instance_generator name="ObjectURI-2">
+                     <arg name="arg1" type="constant">CYI</arg>
+                     <arg name="arg2" type="xpath">concat(@type, ', ', @id)</arg>
+                  </instance_generator>
+                  <label_generator name="Literal">
+                     <arg name="text" type="xpath">concat(@type, ', ', @id)</arg>
+                     <arg name="language" type="constant">en</arg>
+                  </label_generator>
+               </entity>
+            </target_node>
+         </domain>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>@type</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P2_has_type</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>@type</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E55_Type</type>
+                     <instance_generator name="ConceptURI-2">
+                        <arg name="scheme" type="constant">CYI</arg>
+                        <arg name="term" type="xpath">.</arg>
+                     </instance_generator>
+                     <label_generator name="prefLabel">
+                        <arg name="text" type="xpath">.</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>decoration_description</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P3_has_note</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>decoration_description</source_node>
+               <target_node>
+                  <entity>
+                     <type>rdfs:Literal</type>
+                     <instance_generator name="Literal">
+                        <arg name="text" type="xpath">text()</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </instance_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>decoration_period</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P124i_was_transformed_by</relationship>
+                  <entity>
+                     <type>crm:E81_Transformation</type>
+                     <instance_generator name="EventURI-2">
+                        <arg name="arg1" type="constant">Transformation</arg>
+                        <arg name="arg2" type="xpath">concat(../../decoration/@type, ', ', ../../decoration/@id)</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">concat(../../decoration/@type, ', ', ../../decoration/@id)</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+                  <relationship>crm:P4_has_time-span</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>decoration_period</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E52_Time-Span</type>
+                     <instance_generator name="Time-SpanURI-short">
+                        <arg name="term" type="xpath">text()</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">text()</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>decoration_image</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P138i_has_representation</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>decoration_image</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E36_Visual_Item</type>
+                     <instance_generator name="OneLevelCustomURI">
+                        <arg name="level1" type="constant">Image</arg>
+                        <arg name="term" type="xpath">text()</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">text()</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+      </mapping>
+      <mapping>
+         <domain>
+            <source_node>/heritage_entity/object_composition/object_part/object_section</source_node>
+            <target_node>
+               <entity>
+                  <type>crmba:B2_Morphological_Building_Section</type>
+                  <type>crm:E19_Physical_Object</type>
+                  <instance_generator name="UUID"/>
+               </entity>
+            </target_node>
+         </domain>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>section_period</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P108i_was_produced_by</relationship>
+                  <entity>
+                     <type>crm:E12_Production</type>
+                     <instance_generator name="EventURI-2">
+                        <arg name="arg1" type="constant">Production</arg>
+                        <arg name="arg2" type="xpath">../section_name/text()</arg>
+                     </instance_generator>
+                     <label_generator name="CompositeLabel">
+                        <arg name="term1" type="constant">Production of</arg>
+                        <arg name="term2" type="xpath">../section_name/text()</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+                  <relationship>crm:P4_has_time-span</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>section_period</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E52_Time-Span</type>
+                     <instance_generator name="Time-SpanURI-short">
+                        <arg name="term" type="xpath">text()</arg>
+                     </instance_generator>
+                     <label_generator name="Literal">
+                        <arg name="text" type="xpath">text()</arg>
+                        <arg name="language" type="constant">en</arg>
+                     </label_generator>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+         <link>
+            <path>
+               <source_relation>
+                  <relation>decoration</relation>
+               </source_relation>
+               <target_relation>
+                  <relationship>crm:P56_bears_feature</relationship>
+               </target_relation>
+            </path>
+            <range>
+               <source_node>decoration</source_node>
+               <target_node>
+                  <entity>
+                     <type>crm:E26_Physical_Feature</type>
+                     <instance_generator name="UUID"/>
+                  </entity>
+               </target_node>
+            </range>
+         </link>
+      </mapping>
+   </mappings>
+</x3ml>

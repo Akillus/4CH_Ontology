@@ -1,0 +1,99 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:crminf="http://www.cidoc-crm.org/cidoc-crm/CRMinf/"
+    xmlns:crmpe="http://parthenos.d4science.org/CRMext/CRMpe/"
+    xmlns:hdtex="https://hdt.examples/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:j.0="http://www.cidoc-crm.org/cidoc-crm/CRMsci/"
+    xmlns:hdt="https://hdt/1.0.0/"
+    xmlns:crmsci="http://www.ics.forth.gr/isl/CRMsci/"
+    xmlns:nmo="https://dlnarratives.eu/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <hdt:HC1_Heritage_Entity rdf:about="https://hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327">
+    <hdt:HP1_has_digital_twin>
+      <hdt:HC2_Heritage_Digital_Twin rdf:about="http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327">
+        <rdfs:label xml:lang="en">Digital twin of Heritage Entity cornaro_leventis_2305, Portrait of Caterina Cornaro</rdfs:label>
+      </hdt:HC2_Heritage_Digital_Twin>
+    </hdt:HP1_has_digital_twin>
+    <crm:P17i_motivated>
+      <crminf:I5_Inference_Making rdf:about="https://hdt.examples/Activity/CYI/FABFE85A-DF3D-3EE7-B930-66FD0380516C">
+        <crm:P33_used_specific_technique>
+          <crmsci:S4_Observation rdf:about="https://hdt.examples/BeliefAdoption/CYI/E4A5A988-1B25-36F8-8D02-B37410627DE8">
+            <crmsci:O8_observed>
+              <crm:E31_Document rdf:about="https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA">
+                <crminf:J7i_is_evidence_for>
+                  <crminf:I7_Belief_Adoption rdf:about="https://hdt.examples/BeliefAdoption/CYI/0EC409E6-BC2E-3C26-AF16-5F0F194A9C0F">
+                    <crminf:J2_concluded_that>
+                      <crminf:I2_Belief rdf:about="https://hdt.examples/Belief/CYI/FBA9FB3F-62D6-3DC2-90D6-618EF5A08C72">
+                        <crminf:J1i_was_premise_for>
+                          <j.0:S5_Inference_Making rdf:about="https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13">
+                            <crminf:J2_concluded_that>
+                              <crminf:I2_Belief rdf:about="https://hdt.examples/Belief/CYI/3365C1D0-EFA8-3A97-9C5E-74651298669F">
+                                <rdfs:label xml:lang="en">Titian is the painter</rdfs:label>
+                              </crminf:I2_Belief>
+                            </crminf:J2_concluded_that>
+                            <rdfs:label xml:lang="en">Attribution to Titian</rdfs:label>
+                          </j.0:S5_Inference_Making>
+                        </crminf:J1i_was_premise_for>
+                        <rdfs:label xml:lang="en">The painting is a lost work of Titian</rdfs:label>
+                      </crminf:I2_Belief>
+                    </crminf:J2_concluded_that>
+                    <rdfs:label xml:lang="en">Titian painted a painting on the same subject</rdfs:label>
+                  </crminf:I7_Belief_Adoption>
+                </crminf:J7i_is_evidence_for>
+                <rdfs:label xml:lang="en">Document  Carlo Ridolfi, Le meraviglie dell'arte, Venice, 1648</rdfs:label>
+              </crm:E31_Document>
+            </crmsci:O8_observed>
+            <rdfs:label xml:lang="en">Information retrieval CY-STARC-IR-ridolfi_1648-kornaro_leventis_2305</rdfs:label>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/CRMinf/I1_Argumentation"/>
+          </crmsci:S4_Observation>
+        </crm:P33_used_specific_technique>
+        <crm:P33_used_specific_technique>
+          <crminf:I1_Argumentation rdf:about="https://hdt.examples/BeliefAdoption/CYI/D7742888-3736-3C82-8264-F0376632EC47">
+            <crminf:J2_concluded_that>
+              <crminf:I2_Belief rdf:about="https://hdt.examples/Belief/CYI/D12F8039-0FDD-3671-806D-7851C0AEF888">
+                <crminf:J1i_was_premise_for rdf:resource="https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13"/>
+                <rdfs:label xml:lang="en">The painting was cut from a larger one</rdfs:label>
+              </crminf:I2_Belief>
+            </crminf:J2_concluded_that>
+            <crmsci:O9_observed_property_type>
+              <crmsci:S9_Property_Type rdf:about="https://hdt.examples/PropertyType/CYI/CD3131E6-5B52-32BA-A0BE-86800AC7F709">
+                <rdfs:label xml:lang="en">The canvas of the painting was nailed on stretches</rdfs:label>
+              </crmsci:S9_Property_Type>
+            </crmsci:O9_observed_property_type>
+            <rdfs:label xml:lang="en">Canvas observation CY-STARC-CO-kornaro_leventis_2305</rdfs:label>
+            <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMsci/S4_Observation"/>
+          </crminf:I1_Argumentation>
+        </crm:P33_used_specific_technique>
+        <crm:P14_carried_out_by>
+          <crm:E39_Actor rdf:about="https://hdt.examples/Agent/738E44E0-A07C-3FE6-BEFC-D7EA617DFACD">
+            <rdfs:label xml:lang="en">The Cyprus Institute</rdfs:label>
+          </crm:E39_Actor>
+        </crm:P14_carried_out_by>
+        <crm:P2_has_type>
+          <crm:E55_Type rdf:about="https://hdt.examples/Concept/CYI/Art%20History%20Analysis">
+            <skos:prefLabel xml:lang="en">Art History Analysis</skos:prefLabel>
+          </crm:E55_Type>
+        </crm:P2_has_type>
+        <rdfs:label xml:lang="en">Art History Analysis CY-STARC-AHA-kornaro_leventis_2305</rdfs:label>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+      </crminf:I5_Inference_Making>
+    </crm:P17i_motivated>
+    <hdt:HP2_has_story>
+      <nmo:Narrative rdf:about="https://hdt.examples/Narrative/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327">
+        <rdfs:label xml:lang="en">The painting was acquired by a private collector (Michael Zeippekis) who donated it to the Leventis museum.</rdfs:label>
+      </nmo:Narrative>
+    </hdt:HP2_has_story>
+    <crm:P48_has_preferred_identifier>
+      <crm:E42_Identifier rdf:about="https://hdt.examples/Identifier/cornaro_leventis_2305">
+        <rdfs:label>Identifier cornaro_leventis_2305</rdfs:label>
+      </crm:E42_Identifier>
+    </crm:P48_has_preferred_identifier>
+    <crm:P3_has_note xml:lang="en">19th century portrait of Caterina Cornaro, the last queen of Cyprus.</crm:P3_has_note>
+    <crm:P70i_is_documented_in rdf:resource="https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA"/>
+    <rdfs:label xml:lang="en">Portrait of Caterina Cornaro</rdfs:label>
+  </hdt:HC1_Heritage_Entity>
+</rdf:RDF>

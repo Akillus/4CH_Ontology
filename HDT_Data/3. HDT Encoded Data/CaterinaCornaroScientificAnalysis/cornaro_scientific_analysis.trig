@@ -1,0 +1,190 @@
+<https://hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            <https://hdt/1.0.0/HP1_has_digital_twin>
+                    <http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327> .
+
+<http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327> {
+    <https://hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            a       <https://hdt/1.0.0/HC1_Heritage_Entity> , <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Portrait of Caterina Cornaro"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P39i_was_measured_by>
+                    <https://hdt.examples/Event/CYI/37D9D7DC-CFCD-30BA-A595-4219E039459B> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P3_has_note>
+                    "19th century portrait of Caterina Cornaro, the last queen of Cyprus."@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier>
+                    <https://hdt.examples/Identifier/cornaro_leventis_2305> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in>
+                    <https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA> ;
+            <http://www.ics.forth.gr/isl/CRMdig/L1i_was_digitized_by>
+                    <https://hdt.examples/Event/CYI/5E42F7AC-E22A-3EB0-9C87-81C06A3CE798> ;
+            <https://hdt/1.0.0/HP2_has_story>
+                    <https://hdt.examples/Narrative/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327> .
+    
+    <https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E31_Document> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Document  Carlo Ridolfi, Le meraviglie dell'arte, Venice, 1648"@en .
+    
+    <https://hdt.examples/Identifier/cornaro_leventis_2305>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Identifier cornaro_leventis_2305" .
+    
+    <https://hdt.examples/Narrative/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            a       <https://dlnarratives.eu/ontology#Narrative> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "The painting was acquired by a private collector (Michael Zeippekis) who donated it to the Leventis museum."@en .
+    
+    <https://hdt.examples/Event/CYI/37D9D7DC-CFCD-30BA-A595-4219E039459B>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D11_Digital_Measurement_Event> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "XRF/Spectroscopy CY-STARC-XRF-kornaro_leventis_2305"@en .
+    
+    <https://hdt.examples/Event/CYI/5E42F7AC-E22A-3EB0-9C87-81C06A3CE798>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D2_Digitization_Process> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "X-Ray Imaging CY-STARC-XRay-kornaro_leventis_2305"@en .
+
+    <https://hdt.examples/Event/CYI/5E42F7AC-E22A-3EB0-9C87-81C06A3CE798>
+            <http://www.ics.forth.gr/isl/CRMdig/L10_had_input>
+                    <https://hdt.examples/Parameters/F5F249F4-0F58-32A2-A25A-DF67D2C91998> ;
+            <http://www.ics.forth.gr/isl/CRMdig/L11_had_output>
+                    <https://hdt.examples/DigitalVisualObject/505BE29D-3E04-3808-A95A-30846E610D42> ;
+            <http://www.ics.forth.gr/isl/CRMdig/L12_happened_on_device>
+                    <https://hdt.examples/Device/F5025BA2-1E96-39E1-88A0-62983B71ADBC> .
+    
+    <https://hdt.examples/PhysObject/AEA39703-C33F-3B5D-9A43-F6B4A0762B7A>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Mo X-ray tube"@en .
+    
+    <https://hdt.examples/Event/CYI/37D9D7DC-CFCD-30BA-A595-4219E039459B>
+            <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object>
+                    <https://hdt.examples/PhysObject/AEA39703-C33F-3B5D-9A43-F6B4A0762B7A> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P17_was_motivated_by>
+                    <https://hdt.examples/Event/CYI/Pigments%20identification> ;
+            <http://www.ics.forth.gr/isl/CRMdig/L10_had_input>
+                    <https://hdt.examples/Parameters/8CD6F525-AE5C-34A5-A17C-8B52D5CA115D> , <https://hdt.examples/Parameters/40F23D04-29D1-366B-98C3-FF86834602F2> ;
+            <http://www.ics.forth.gr/isl/CRMdig/L12_happened_on_device>
+                    <https://hdt.examples/Device/6CA09856-761C-37FF-8009-3196ED801E88> ;
+            <http://www.ics.forth.gr/isl/CRMdig/L20_has_created>
+                    <https://hdt.examples/DataObject/7A82E2B6-EFEC-3330-8BD9-CDD4317DD015> ;
+            <http://www.ics.forth.gr/isl/CRMdig/L23_used_software_or_firmware>
+                    <https://hdt.examples/Software/073C36AC-7110-3B9B-AF4A-3EE4C0381E55> .
+    
+    <https://hdt.examples/DataEval/7A82E2B6-EFEC-3330-8BD9-CDD4317DD015>
+            a       <http://www.ics.forth.gr/isl/CRMsci/S6_Data_Evaluation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Evaluation of Lead carbonate concentration"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J2_concluded_that>
+                    <https://hdt.examples/Belief/CYI/F53F62D2-98BC-3F99-AD52-9E687477FDCE> ;
+            <http://www.ics.forth.gr/isl/CRMsci/O11_described>
+                    <https://hdt.examples/DataEval/8826832B-6307-3C08-818B-53F3742059DE> .
+    
+    <https://hdt.examples/DataObject/7A82E2B6-EFEC-3330-8BD9-CDD4317DD015>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Lead carbonate concentration"@en ;
+            <http://www.ics.forth.gr/isl/CRMsci/O16i_value_was_observed_by>
+                    <https://hdt.examples/DataEval/7A82E2B6-EFEC-3330-8BD9-CDD4317DD015> .
+    
+    <https://hdt.examples/PropertyType/26A820FD-9198-3845-8427-1DDB9C8F54D4>
+            a       <http://www.ics.forth.gr/isl/CRMsci/S9_Property_Type> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Birght areas"@en .
+    
+    <https://hdt.examples/Belief/CYI/3741CAF3-7530-303F-ABDA-F32BEBCB9F49>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I2_Belief> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "X-ray opaque pigments composed of heavy elements"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J1i_was_premise_for>
+                    <https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13> .
+    
+    <https://hdt.examples/DigitalVisualObject/505BE29D-3E04-3808-A95A-30846E610D42>
+            a       <https://hdt/1.0.0/HC7_Digital_Visual_Object> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "X-Ray image of Caterina Cornaro's Painting"@en ;
+            <http://www.ics.forth.gr/isl/CRMsci/O16i_value_was_observed_by>
+                    <https://hdt.examples/DataEval/505BE29D-3E04-3808-A95A-30846E610D42> ;
+            <http://www.ics.forth.gr/isl/CRMsci/O8i_was_observed_by>
+                    <https://hdt.examples/DataEval/505BE29D-3E04-3808-A95A-30846E610D42> .
+    
+    <https://hdt.examples/Device/6CA09856-761C-37FF-8009-3196ED801E88>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "XRF ARTAX-200"@en .
+    
+    <https://hdt.examples/Belief/CYI/F53F62D2-98BC-3F99-AD52-9E687477FDCE>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I2_Belief> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Lead white (2PbCO3·Pb(OH)2) characteristic of Renaissance painting"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J1i_was_premise_for>
+                    <https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13> .
+    
+    <https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I5_Inference_Making> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Attribution to Titian"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J2_concluded_that>
+                    <https://hdt.examples/Belief/CYI/3365C1D0-EFA8-3A97-9C5E-74651298669F> .
+    
+    <https://hdt.examples/Parameters/40F23D04-29D1-366B-98C3-FF86834602F2>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "XRF Settings"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P3_has_note>
+                    "filter: Molybdenum 12.5 μm"@en , "time: 60 s"@en , "current: 700 μA"@en , "voltage: 50 kV"@en .
+    
+    <https://hdt.examples/Event/CYI/Pigments%20identification>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Pigments identification"@en .
+    
+    <https://hdt.examples/Belief/CYI/3365C1D0-EFA8-3A97-9C5E-74651298669F>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I2_Belief> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Titian is the painter"@en .
+    
+    <https://hdt.examples/Parameters/F5F249F4-0F58-32A2-A25A-DF67D2C91998>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Multispectral Conditions"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P3_has_note>
+                    "acquisition: 1000 nm"@en , "light_source: Halogen lamp"@en , "spectral_range: 420-1000 nm, 20 nm step"@en .
+    
+    <https://hdt.examples/Software/073C36AC-7110-3B9B-AF4A-3EE4C0381E55>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D14_Software> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Spectra 5.3"@en .
+    
+    <https://hdt.examples/DataEval/505BE29D-3E04-3808-A95A-30846E610D42>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I5_Inference_Making> , <http://www.ics.forth.gr/isl/CRMsci/S4_Observation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Observation of X-Ray image of Caterina Cornaro's Painting"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J2_concluded_that>
+                    <https://hdt.examples/Belief/CYI/3741CAF3-7530-303F-ABDA-F32BEBCB9F49> ;
+            <http://www.ics.forth.gr/isl/CRMsci/O9_observed_property_type>
+                    <https://hdt.examples/PropertyType/26A820FD-9198-3845-8427-1DDB9C8F54D4> .
+    
+    <https://hdt.examples/Device/F5025BA2-1E96-39E1-88A0-62983B71ADBC>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D8_Digital_Device> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Musis multispectral camera"@en .
+    
+    <https://hdt.examples/DataEval/8826832B-6307-3C08-818B-53F3742059DE>
+            a       <http://www.ics.forth.gr/isl/CRMsci/S9_Property_Type> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Basic lead carbonate, intense Pb lines"@en .
+    
+    <http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            a       <https://hdt/1.0.0/HC2_Heritage_Digital_Twin> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Digital twin of Heritage Entity cornaro_leventis_2305, Portrait of Caterina Cornaro"@en .
+    
+    <https://hdt.examples/Parameters/8CD6F525-AE5C-34A5-A17C-8B52D5CA115D>
+            a       <http://www.ics.forth.gr/isl/CRMdig/D9_Data_Object> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Environmental Parameters"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P3_has_note>
+                    "atmosphere: Air"@en .
+}

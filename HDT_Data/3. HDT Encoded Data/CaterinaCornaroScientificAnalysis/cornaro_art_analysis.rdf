@@ -1,0 +1,151 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:crmdig="http://www.ics.forth.gr/isl/CRMdig/"
+    xmlns:crminf="http://www.cidoc-crm.org/cidoc-crm/CRMinf/"
+    xmlns:crmpe="http://parthenos.d4science.org/CRMext/CRMpe/"
+    xmlns:hdtex="https://hdt.examples/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:hdt="https://hdt/1.0.0/"
+    xmlns:crmsci="http://www.ics.forth.gr/isl/CRMsci/"
+    xmlns:nmo="https://dlnarratives.eu/ontology#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <hdt:HC1_Heritage_Entity rdf:about="https://hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327">
+    <crmdig:L1i_was_digitized_by>
+      <crmdig:D2_Digitization_Process rdf:about="https://hdt.examples/Event/CYI/5E42F7AC-E22A-3EB0-9C87-81C06A3CE798">
+        <crmdig:L11_had_output>
+          <hdt:HC7_Digital_Visual_Object rdf:about="https://hdt.examples/DigitalVisualObject/505BE29D-3E04-3808-A95A-30846E610D42">
+            <crmsci:O8i_was_observed_by>
+              <crminf:I5_Inference_Making rdf:about="https://hdt.examples/DataEval/505BE29D-3E04-3808-A95A-30846E610D42">
+                <crmsci:O9_observed_property_type>
+                  <crmsci:S9_Property_Type rdf:about="https://hdt.examples/PropertyType/26A820FD-9198-3845-8427-1DDB9C8F54D4">
+                    <rdfs:label xml:lang="en">Birght areas</rdfs:label>
+                  </crmsci:S9_Property_Type>
+                </crmsci:O9_observed_property_type>
+                <crminf:J2_concluded_that>
+                  <crminf:I2_Belief rdf:about="https://hdt.examples/Belief/CYI/3741CAF3-7530-303F-ABDA-F32BEBCB9F49">
+                    <crminf:J1i_was_premise_for>
+                      <crminf:I5_Inference_Making rdf:about="https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13">
+                        <crminf:J2_concluded_that>
+                          <crminf:I2_Belief rdf:about="https://hdt.examples/Belief/CYI/3365C1D0-EFA8-3A97-9C5E-74651298669F">
+                            <rdfs:label xml:lang="en">Titian is the painter</rdfs:label>
+                          </crminf:I2_Belief>
+                        </crminf:J2_concluded_that>
+                        <rdfs:label xml:lang="en">Attribution to Titian</rdfs:label>
+                      </crminf:I5_Inference_Making>
+                    </crminf:J1i_was_premise_for>
+                    <rdfs:label xml:lang="en">X-ray opaque pigments composed of heavy elements</rdfs:label>
+                  </crminf:I2_Belief>
+                </crminf:J2_concluded_that>
+                <rdfs:label xml:lang="en">Observation of X-Ray image of Caterina Cornaro's Painting</rdfs:label>
+                <rdf:type rdf:resource="http://www.ics.forth.gr/isl/CRMsci/S4_Observation"/>
+              </crminf:I5_Inference_Making>
+            </crmsci:O8i_was_observed_by>
+            <crmsci:O16i_value_was_observed_by rdf:resource="https://hdt.examples/DataEval/505BE29D-3E04-3808-A95A-30846E610D42"/>
+            <rdfs:label xml:lang="en">X-Ray image of Caterina Cornaro's Painting</rdfs:label>
+          </hdt:HC7_Digital_Visual_Object>
+        </crmdig:L11_had_output>
+        <crmdig:L12_happened_on_device>
+          <crmdig:D8_Digital_Device rdf:about="https://hdt.examples/Device/F5025BA2-1E96-39E1-88A0-62983B71ADBC">
+            <rdfs:label xml:lang="en">Musis multispectral camera</rdfs:label>
+          </crmdig:D8_Digital_Device>
+        </crmdig:L12_happened_on_device>
+        <crmdig:L10_had_input>
+          <crmdig:D9_Data_Object rdf:about="https://hdt.examples/Parameters/F5F249F4-0F58-32A2-A25A-DF67D2C91998">
+            <crm:P3_has_note xml:lang="en">acquisition: 1000 nm</crm:P3_has_note>
+            <crm:P3_has_note xml:lang="en">light_source: Halogen lamp</crm:P3_has_note>
+            <crm:P3_has_note xml:lang="en">spectral_range: 420-1000 nm, 20 nm step</crm:P3_has_note>
+            <rdfs:label xml:lang="en">Multispectral Conditions</rdfs:label>
+          </crmdig:D9_Data_Object>
+        </crmdig:L10_had_input>
+        <rdfs:label xml:lang="en">X-Ray Imaging CY-STARC-XRay-kornaro_leventis_2305</rdfs:label>
+      </crmdig:D2_Digitization_Process>
+    </crmdig:L1i_was_digitized_by>
+    <hdt:HP2_has_story>
+      <nmo:Narrative rdf:about="https://hdt.examples/Narrative/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327">
+        <rdfs:label xml:lang="en">The painting was acquired by a private collector (Michael Zeippekis) who donated it to the Leventis museum.</rdfs:label>
+      </nmo:Narrative>
+    </hdt:HP2_has_story>
+    <hdt:HP1_has_digital_twin>
+      <hdt:HC2_Heritage_Digital_Twin rdf:about="http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327">
+        <rdfs:label xml:lang="en">Digital twin of Heritage Entity cornaro_leventis_2305, Portrait of Caterina Cornaro</rdfs:label>
+      </hdt:HC2_Heritage_Digital_Twin>
+    </hdt:HP1_has_digital_twin>
+    <crm:P39i_was_measured_by>
+      <crmdig:D11_Digital_Measurement_Event rdf:about="https://hdt.examples/Event/CYI/37D9D7DC-CFCD-30BA-A595-4219E039459B">
+        <crmdig:L20_has_created>
+          <crmdig:D9_Data_Object rdf:about="https://hdt.examples/DataObject/7A82E2B6-EFEC-3330-8BD9-CDD4317DD015">
+            <crmsci:O16i_value_was_observed_by>
+              <crmsci:S6_Data_Evaluation rdf:about="https://hdt.examples/DataEval/7A82E2B6-EFEC-3330-8BD9-CDD4317DD015">
+                <crminf:J2_concluded_that>
+                  <crminf:I2_Belief rdf:about="https://hdt.examples/Belief/CYI/F53F62D2-98BC-3F99-AD52-9E687477FDCE">
+                    <crminf:J1i_was_premise_for rdf:resource="https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13"/>
+                    <rdfs:label xml:lang="en">Lead white (2PbCO3·Pb(OH)2) characteristic of Renaissance painting</rdfs:label>
+                  </crminf:I2_Belief>
+                </crminf:J2_concluded_that>
+                <crmsci:O11_described>
+                  <crmsci:S9_Property_Type rdf:about="https://hdt.examples/DataEval/8826832B-6307-3C08-818B-53F3742059DE">
+                    <rdfs:label xml:lang="en">Basic lead carbonate, intense Pb lines</rdfs:label>
+                  </crmsci:S9_Property_Type>
+                </crmsci:O11_described>
+                <rdfs:label xml:lang="en">Evaluation of Lead carbonate concentration</rdfs:label>
+              </crmsci:S6_Data_Evaluation>
+            </crmsci:O16i_value_was_observed_by>
+            <rdfs:label xml:lang="en">Lead carbonate concentration</rdfs:label>
+          </crmdig:D9_Data_Object>
+        </crmdig:L20_has_created>
+        <crm:P16_used_specific_object>
+          <crm:E19_Physical_Object rdf:about="https://hdt.examples/PhysObject/AEA39703-C33F-3B5D-9A43-F6B4A0762B7A">
+            <rdfs:label xml:lang="en">Mo X-ray tube</rdfs:label>
+          </crm:E19_Physical_Object>
+        </crm:P16_used_specific_object>
+        <crmdig:L12_happened_on_device>
+          <crmdig:D8_Digital_Device rdf:about="https://hdt.examples/Device/6CA09856-761C-37FF-8009-3196ED801E88">
+            <rdfs:label xml:lang="en">XRF ARTAX-200</rdfs:label>
+          </crmdig:D8_Digital_Device>
+        </crmdig:L12_happened_on_device>
+        <crmdig:L23_used_software_or_firmware>
+          <crmdig:D14_Software rdf:about="https://hdt.examples/Software/073C36AC-7110-3B9B-AF4A-3EE4C0381E55">
+            <rdfs:label xml:lang="en">Spectra 5.3</rdfs:label>
+          </crmdig:D14_Software>
+        </crmdig:L23_used_software_or_firmware>
+        <crmdig:L10_had_input>
+          <crmdig:D9_Data_Object rdf:about="https://hdt.examples/Parameters/8CD6F525-AE5C-34A5-A17C-8B52D5CA115D">
+            <crm:P3_has_note xml:lang="en">atmosphere: Air</crm:P3_has_note>
+            <rdfs:label xml:lang="en">Environmental Parameters</rdfs:label>
+          </crmdig:D9_Data_Object>
+        </crmdig:L10_had_input>
+        <crmdig:L10_had_input>
+          <crmdig:D9_Data_Object rdf:about="https://hdt.examples/Parameters/40F23D04-29D1-366B-98C3-FF86834602F2">
+            <crm:P3_has_note xml:lang="en">filter: Molybdenum 12.5 μm</crm:P3_has_note>
+            <crm:P3_has_note xml:lang="en">time: 60 s</crm:P3_has_note>
+            <crm:P3_has_note xml:lang="en">current: 700 μA</crm:P3_has_note>
+            <crm:P3_has_note xml:lang="en">voltage: 50 kV</crm:P3_has_note>
+            <rdfs:label xml:lang="en">XRF Settings</rdfs:label>
+          </crmdig:D9_Data_Object>
+        </crmdig:L10_had_input>
+        <crm:P17_was_motivated_by>
+          <crm:E7_Activity rdf:about="https://hdt.examples/Event/CYI/Pigments%20identification">
+            <rdfs:label xml:lang="en">Pigments identification</rdfs:label>
+          </crm:E7_Activity>
+        </crm:P17_was_motivated_by>
+        <rdfs:label xml:lang="en">XRF/Spectroscopy CY-STARC-XRF-kornaro_leventis_2305</rdfs:label>
+      </crmdig:D11_Digital_Measurement_Event>
+    </crm:P39i_was_measured_by>
+    <rdfs:label xml:lang="en">Portrait of Caterina Cornaro</rdfs:label>
+    <crm:P70i_is_documented_in>
+      <crm:E31_Document rdf:about="https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA">
+        <rdfs:label xml:lang="en">Document  Carlo Ridolfi, Le meraviglie dell'arte, Venice, 1648</rdfs:label>
+      </crm:E31_Document>
+    </crm:P70i_is_documented_in>
+    <crm:P3_has_note xml:lang="en">19th century portrait of Caterina Cornaro, the last queen of Cyprus.</crm:P3_has_note>
+    <crm:P48_has_preferred_identifier>
+      <crm:E42_Identifier rdf:about="https://hdt.examples/Identifier/cornaro_leventis_2305">
+        <rdfs:label>Identifier cornaro_leventis_2305</rdfs:label>
+      </crm:E42_Identifier>
+    </crm:P48_has_preferred_identifier>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+  </hdt:HC1_Heritage_Entity>
+</rdf:RDF>

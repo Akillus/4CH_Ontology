@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object>
+	<object_id>cornaro_leventis_2305</object_id>
+	<object_name>Portrait of Caterina Cornaro</object_name>
+	<object_description>19th century portrait of Caterina Cornaro, the last queen of Cyprus.</object_description>
+	<object_documentation type="Book">
+		<document_author>Carlo Ridolfi</document_author>
+		<document_title>Le meraviglie dell'arte</document_title>
+		<publication_city>Venice</publication_city>
+		<publication_year>1648</publication_year>
+	</object_documentation>
+	<object_history>
+		<history_description>The painting was acquired by a private collector (Michael Zeippekis) who donated it to the Leventis museum.</history_description>
+	</object_history>
+	<research_analyses type="Art History Analysis" id="CY-STARC-AHA-kornaro_leventis_2305">
+		<analysis_agent>The Cyprus Institute</analysis_agent>
+		<object_analysis id="CY-STARC-CO-kornaro_leventis_2305">
+			<analysis_type>Canvas observation</analysis_type>
+			<observed_results>The canvas of the painting was nailed on stretches</observed_results>
+			<generated_results>The painting was cut from a larger one</generated_results>
+			<analysis_conclusions>
+				<inference>Attribution to Titian</inference>
+				<hypothesis>Titian is the painter</hypothesis>
+			</analysis_conclusions>
+		</object_analysis>
+		<object_analysis id="CY-STARC-IR-ridolfi_1648-kornaro_leventis_2305">
+			<analysis_type>Information retrieval</analysis_type>
+			<observed_object type="Book">Carlo Ridolfi, Le meraviglie dell'arte, Venice, 1648</observed_object>
+			<observed_results>Titian painted a painting on the same subject</observed_results>
+			<generated_results>The painting is a lost work of Titian</generated_results>
+			<analysis_conclusions>
+				<inference>Attribution to Titian</inference>
+				<hypothesis>Titian is the painter</hypothesis>
+			</analysis_conclusions>
+		</object_analysis>
+		<research_analysis_conclusion>Titian is the painter</research_analysis_conclusion>
+	</research_analyses>
+	
+</object>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<heritage_entity type="Monastery">
+	<object_id>lampadistis_1509</object_id>
+	<object_name>Monastery of Agios Ioannis Lampadistis</object_name>
+	<object_location>Cyprus</object_location>
+	<object_history id="Story-Savvas-1640">
+		<history_description>The monastery of St. John Lampadistis consists today of a group of buildings built and renovated in different periods.
+While its founding date is unclear, the katholicon (the monastery church), dedicated to Saint Herakleidios, born in the village of Lampadistis and the first bishop of Cyprus, is dated to the 11th century.</history_description>
+		<history_source type="Manuscript">
+			<document_author>Priest Savvas</document_author>
+			<document_title>Life of St. John Lampadistis</document_title>
+			<publication_city>Cyprus</publication_city>
+			<publication_year>1640</publication_year>
+			<document_status>Lost</document_status>
+		</history_source>
+	</object_history>
+	<object_representation type="3D">
+		<url>https://modelier.us.aldryn.io/models/d10a14ee-4192-45b6-b54b-8d11ecd6f70e/v2/embed/</url>
+	</object_representation>
+	<object_representation type="360Panoramic">
+		<url>https://dioptra.cyi.ac.cy/sites/360/lampadistis/</url>
+		<part_of>http://ihat.cyi.ac.cy/?q=Collection </part_of>
+	</object_representation>
+	<object_composition>
+		<object_part type="Katholicon">
+			<decoration type="Graffiti" id="lampadistis_1509">
+				<decoration_description>Karamanlika Pilgrims Graffiti</decoration_description>
+				<decoration_period>18th Century</decoration_period>
+				<decoration_image>lampadistis_1509.jpg</decoration_image>
+			</decoration>
+			<object_period>11th Century</object_period>
+			<object_section type="Chapel" id="lampadistis_1509">
+				<section_name>St. Herakleios Chapel</section_name>
+				<section_period>11th Century</section_period>
+			</object_section>
+			<object_section type="Chapel" id="lampadistis_1509">
+				<section_name>St. John Lampadistis Chapel</section_name>
+				<section_period>12th Century</section_period>
+			</object_section>
+			<object_section type="Chapel" id="lampadistis_1509">
+				<section_name>Latin Chapel</section_name>
+				<section_period>15th Century</section_period>
+				<decoration type="Frescoes" id="lampadistis_1509">
+					<decoration_description>Wall Frescoes of the Latin Chapel</decoration_description>
+					<decoration_period>15th Century</decoration_period>
+				</decoration>
+			</object_section>
+		</object_part>
+	</object_composition>
+</heritage_entity>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object>
+	<object_id>cornaro_leventis_2305</object_id>
+	<object_name>Portrait of Caterina Cornaro</object_name>
+	<object_description>19th century portrait of Caterina Cornaro, the last queen of Cyprus.</object_description>
+	<object_documentation type="Book">
+		<document_author>Carlo Ridolfi</document_author>
+		<document_title>Le meraviglie dell'arte</document_title>
+		<publication_city>Venice</publication_city>
+		<publication_year>1648</publication_year>
+	</object_documentation>
+	<object_history>
+		<history_description>The painting was acquired by a private collector (Michael Zeippekis) who donated it to the Leventis museum.</history_description>
+	</object_history>
+	
+	<research_analyses type="Scientific Analysis" id="CY-STARC-SA-kornaro_leventis_2305">
+		<analysis_agent>The Cyprus Institute</analysis_agent>
+		<analysis_date>2016-10-06</analysis_date>
+		<analysis_documentation>Report-Katerina Cornaro-96 dpi.pdf</analysis_documentation>
+		<object_analysis id="CY-STARC-XRF-kornaro_leventis_2305">
+			<analysis_type>XRF/Spectroscopy</analysis_type>
+			<analysis_goal>Pigments identification</analysis_goal>
+			<analysis_device>XRF ARTAX-200</analysis_device>
+			<analysis_device_component>Mo X-ray tube</analysis_device_component>
+			<analysis_software>Spectra 5.3</analysis_software>
+			<analysis_parameters type="XRF Settings">
+				<voltage>50 kV</voltage>
+				<current>700 μA</current>
+				<time>60 s</time>
+				<filter>Molybdenum 12.5 μm</filter>
+			</analysis_parameters>
+			<analysis_parameters type="Environmental Parameters">
+				<atmosphere>Air</atmosphere>
+			</analysis_parameters>
+			<generated_results type="Numeric Data">Lead carbonate concentration</generated_results>
+			<observed_results type="pigment">Basic lead carbonate, intense Pb lines</observed_results>
+			<inference>Lead white (2PbCO3·Pb(OH)2) characteristic of Renaissance painting</inference>
+			<analysis_conclusions>
+				<inference>Attribution to Titian</inference>
+				<hypothesis>Titian is the painter</hypothesis>
+			</analysis_conclusions>
+		</object_analysis>
+		<object_analysis id="CY-STARC-XRay-kornaro_leventis_2305">
+			<analysis_type>X-Ray Imaging</analysis_type>
+			<analysed_areas>Birght areas</analysed_areas>
+			<analysis_device>Musis multispectral camera</analysis_device>
+			<analysis_parameters type="Multispectral Conditions">
+				<spectral_range>420-1000 nm, 20 nm step</spectral_range>
+				<light_source>Halogen lamp</light_source>
+				<acquisition>1000 nm</acquisition>
+			</analysis_parameters>
+			<generated_results type="Image">X-Ray image of Caterina Cornaro's Painting</generated_results>
+			<observed_results>X-ray opaque pigments composed of heavy elements</observed_results>
+			<analysis_conclusions>
+				<inference>Attribution to Titian</inference>
+				<hypothesis>Titian is the painter</hypothesis>
+			</analysis_conclusions>
+		</object_analysis>
+		<research_analyses_conclusion>Titian is the painter</research_analyses_conclusion>
+	</research_analyses>
+</object>

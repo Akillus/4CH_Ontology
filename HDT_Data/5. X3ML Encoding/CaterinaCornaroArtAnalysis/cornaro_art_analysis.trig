@@ -1,0 +1,120 @@
+<https://hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            <https://hdt/1.0.0/HP1_has_digital_twin>
+                    <http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327> .
+
+<http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327> {
+
+	<https://hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            a       <https://hdt/1.0.0/HC1_Heritage_Entity> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Portrait of Caterina Cornaro"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P17i_motivated>
+                    <https://hdt.examples/Activity/CYI/FABFE85A-DF3D-3EE7-B930-66FD0380516C> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P3_has_note>
+                    "19th century portrait of Caterina Cornaro, the last queen of Cyprus."@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier>
+                    <https://hdt.examples/Identifier/cornaro_leventis_2305> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P70i_is_documented_in>
+                    <https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA> ;
+            <https://hdt/1.0.0/HP1_has_digital_twin>
+                    <http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327> ;
+            <https://hdt/1.0.0/HP2_has_story>
+                    <https://hdt.examples/Narrative/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327> .
+					
+    <https://hdt.examples/BeliefAdoption/CYI/D7742888-3736-3C82-8264-F0376632EC47>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I1_Argumentation> , <http://www.ics.forth.gr/isl/CRMsci/S4_Observation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Canvas observation CY-STARC-CO-kornaro_leventis_2305"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J2_concluded_that>
+                    <https://hdt.examples/Belief/CYI/D12F8039-0FDD-3671-806D-7851C0AEF888> ;
+            <http://www.ics.forth.gr/isl/CRMsci/O9_observed_property_type>
+                    <https://hdt.examples/PropertyType/CYI/CD3131E6-5B52-32BA-A0BE-86800AC7F709> .
+    
+    <https://hdt.examples/Belief/CYI/FBA9FB3F-62D6-3DC2-90D6-618EF5A08C72>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I2_Belief> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "The painting is a lost work of Titian"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J1i_was_premise_for>
+                    <https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13> .
+    
+    <https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMsci/S5_Inference_Making> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Attribution to Titian"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J2_concluded_that>
+                    <https://hdt.examples/Belief/CYI/3365C1D0-EFA8-3A97-9C5E-74651298669F> .
+    
+    <https://hdt.examples/PropertyType/CYI/CD3131E6-5B52-32BA-A0BE-86800AC7F709>
+            a       <http://www.ics.forth.gr/isl/CRMsci/S9_Property_Type> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "The canvas of the painting was nailed on stretches"@en .
+    
+    <https://hdt.examples/BeliefAdoption/CYI/E4A5A988-1B25-36F8-8D02-B37410627DE8>
+            a       <http://www.ics.forth.gr/isl/CRMsci/S4_Observation> , <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I1_Argumentation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Information retrieval CY-STARC-IR-ridolfi_1648-kornaro_leventis_2305"@en ;
+            <http://www.ics.forth.gr/isl/CRMsci/O8_observed>
+                    <https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA> .
+    
+    <https://hdt.examples/BeliefAdoption/CYI/0EC409E6-BC2E-3C26-AF16-5F0F194A9C0F>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I7_Belief_Adoption> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Titian painted a painting on the same subject"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J2_concluded_that>
+                    <https://hdt.examples/Belief/CYI/FBA9FB3F-62D6-3DC2-90D6-618EF5A08C72> .
+    
+    <https://hdt.examples/Document/CYI/DDA5F158-BEB2-369C-B5DC-3BD886885AFA>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E31_Document> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Document  Carlo Ridolfi, Le meraviglie dell'arte, Venice, 1648"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J7i_is_evidence_for>
+                    <https://hdt.examples/BeliefAdoption/CYI/0EC409E6-BC2E-3C26-AF16-5F0F194A9C0F> .
+    
+    <https://hdt.examples/Narrative/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            a       <https://dlnarratives.eu/ontology#Narrative> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "The painting was acquired by a private collector (Michael Zeippekis) who donated it to the Leventis museum."@en .
+    
+    <https://hdt.examples/Belief/CYI/3365C1D0-EFA8-3A97-9C5E-74651298669F>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I2_Belief> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Titian is the painter"@en .
+    
+    <https://hdt.examples/Concept/CYI/Art%20History%20Analysis>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel>
+                    "Art History Analysis"@en .
+    
+    <https://hdt.examples/Identifier/cornaro_leventis_2305>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Identifier cornaro_leventis_2305" .
+    
+    <http://twin_hdt.examples/Object/CYI/3B1A1509-D036-36EB-B29F-DB6B5650E327>
+            a       <https://hdt/1.0.0/HC2_Heritage_Digital_Twin> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Digital twin of Heritage Entity cornaro_leventis_2305, Portrait of Caterina Cornaro"@en .
+    
+    <https://hdt.examples/Activity/CYI/FABFE85A-DF3D-3EE7-B930-66FD0380516C>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I5_Inference_Making> , <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Art History Analysis CY-STARC-AHA-kornaro_leventis_2305"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by>
+                    <https://hdt.examples/Agent/738E44E0-A07C-3FE6-BEFC-D7EA617DFACD> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>
+                    <https://hdt.examples/Concept/CYI/Art%20History%20Analysis> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique>
+                    <https://hdt.examples/BeliefAdoption/CYI/E4A5A988-1B25-36F8-8D02-B37410627DE8> , <https://hdt.examples/BeliefAdoption/CYI/D7742888-3736-3C82-8264-F0376632EC47> .
+    
+    <https://hdt.examples/Belief/CYI/D12F8039-0FDD-3671-806D-7851C0AEF888>
+            a       <http://www.cidoc-crm.org/cidoc-crm/CRMinf/I2_Belief> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "The painting was cut from a larger one"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/CRMinf/J1i_was_premise_for>
+                    <https://hdt.examples/Inference/CYI/05B36C3B-97FD-3F09-99A1-6AAC0AA63E13> .
+    
+    <https://hdt.examples/Agent/738E44E0-A07C-3FE6-BEFC-D7EA617DFACD>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "The Cyprus Institute"@en .
+}

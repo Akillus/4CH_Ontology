@@ -1,0 +1,225 @@
+<https://hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266>
+            <https://hdt/1.0.0/HP1_has_digital_twin>
+                    <http://twin_hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266> .
+
+<http://twin_hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266> {
+    <https://hdt.examples/Concept/360Panoramic>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel>
+                    "360Panoramic"@en .
+    
+    <https://hdt.examples/MorphBuildingSection/CYI/5A97D8A3-E4F2-375D-92B5-67B638120B4F>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> , <http://www.ics.forth.gr/isl/CRMba/B2_Morphological_Building_Section> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "lampadistis_1509, St. Herakleios Chapel"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by>
+                    <https://hdt.examples/Event/Production/St.%20Herakleios%20Chapel> .
+    
+    <https://hdt.examples/Event/Transformation/Frescoes%2C%20lampadistis_1509>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E81_Transformation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Frescoes, lampadistis_1509"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>
+                    <https://hdt.examples/Time-Span/D9B49888-08D8-3780-BDD9-AF4D7A75C0ED> .
+    
+    <https://hdt.examples/MorphBuildingSection/CYI/C33EDCB6-0E27-3FE0-AC48-F550D486E8DA>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> , <http://www.ics.forth.gr/isl/CRMba/B2_Morphological_Building_Section> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "lampadistis_1509, Latin Chapel"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by>
+                    <https://hdt.examples/Event/Production/Latin%20Chapel> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P56_bears_feature>
+                    <https://hdt.examples/Object/CYI/A461AA67-A74E-31F0-A964-C94BAF02DAF4> .
+    
+    <https://hdt.examples/Concept/CYI/Graffiti>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel>
+                    "Graffiti"@en .
+    
+    <https://hdt.examples/Narrative/CYI/578A2C69-5359-3D94-B3EA-E7B963B3FCFB>
+            a       <https://dlnarratives.eu/ontology#Narrative> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Story-Savvas-1640"@en ;
+            <https://hdt/1.0.0/HP4_is_narrated_through>
+                    <https://hdt.examples/Narration/CYI/578A2C69-5359-3D94-B3EA-E7B963B3FCFB> .
+    
+    <https://hdt.examples/Time-Span/D5B91FCD-6D7E-3946-AEA0-4C530A798657>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "12th Century"@en .
+    
+    <https://hdt.examples/Event/Production/St.%20John%20Lampadistis%20Chapel>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E12_Production> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Production of St. John Lampadistis Chapel"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>
+                    <https://hdt.examples/Time-Span/D5B91FCD-6D7E-3946-AEA0-4C530A798657> .
+    
+    <https://hdt.examples/Event/Production/St.%20Herakleios%20Chapel>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E12_Production> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Production of St. Herakleios Chapel"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>
+                    <https://hdt.examples/Time-Span/ABD81BB6-A530-3674-A30B-EC1072A822F1> .
+    
+    <http://twin_hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266>
+            a       <https://hdt/1.0.0/HC2_Heritage_Digital_Twin> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Digital twin of Heritage Entity lampadistis_1509, Monastery of Agios Ioannis Lampadistis"@en .
+    
+    <urn:uuid:6b0bf889-886b-4e63-8ec5-7b030f0dec62>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Graffiti, lampadistis_1509"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P124i_was_transformed_by>
+                    <https://hdt.examples/Event/Transformation/Graffiti%2C%20lampadistis_1509> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P138i_has_representation>
+                    <https://hdt.examples/Image/B0CD544D-2804-35B3-AD32-1D3F0F143ED6> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>
+                    <https://hdt.examples/Concept/CYI/Graffiti> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P3_has_note>
+                    "Karamanlika Pilgrims Graffiti"@en .
+    
+    <https://hdt.examples/Intangible/CYI/4F91939A-64E2-3754-98EB-822C0ACBBEE6>
+            a       <https://hdt/1.0.0/HC4_Intangible_Aspect> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Life of St. John Lampadistis"@en ;
+            <https://hdt/1.0.0/HP2_has_story>
+                    <https://hdt.examples/Narrative/CYI/578A2C69-5359-3D94-B3EA-E7B963B3FCFB> .
+    
+    <https://hdt.examples/Narration/CYI/578A2C69-5359-3D94-B3EA-E7B963B3FCFB>
+            a       <https://dlnarratives.eu/ontology#Narration> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "The monastery of St. John Lampadistis consists today of a group of buildings built and renovated in different periods.\nWhile its founding date is unclear, the katholicon (the monastery church), dedicated to Saint Herakleidios, born in the village of Lampadistis and the first bishop of Cyprus, is dated to the 11th century."@en ;
+            <https://hdt/1.0.0/HP8_is_narrated_in_document>
+                    <https://hdt.examples/Document/CYI/95AE6414-9429-3B31-83D9-97615D5B81E6> .
+    
+    <https://hdt.examples/Object/CYI/FA77DA93-14FC-3C53-967D-8A296A2FB266>
+            a       <https://hdt/1.0.0/HC3_Tangible_Aspect> , <http://www.ics.forth.gr/isl/CRMba/B1_Built_Work> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Monastery of Agios Ioannis Lampadistis"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of>
+                    <https://dioptra.cyi.ac.cy/sites/360/lampadistis/> , <https://modelier.us.aldryn.io/models/d10a14ee-4192-45b6-b54b-8d11ecd6f70e/v2/embed/> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P46_is_composed_of>
+                    <https://hdt.examples/BuitWork/86FC9253-19F0-37FF-8E92-88E33481E52F> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P48_has_preferred_identifier>
+                    <https://hdt.examples/Identifier/lampadistis_1509> ;
+            <https://hdt/1.0.0/HP5_has_intangible_aspect>
+                    <https://hdt.examples/Intangible/CYI/4F91939A-64E2-3754-98EB-822C0ACBBEE6> .
+    
+    <https://modelier.us.aldryn.io/models/d10a14ee-4192-45b6-b54b-8d11ecd6f70e/v2/embed/>
+            a       <https://hdt/1.0.0/HC8_3D_Model> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "https://modelier.us.aldryn.io/models/d10a14ee-4192-45b6-b54b-8d11ecd6f70e/v2/embed/" ;
+            <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>
+                    <https://hdt.examples/Concept/3D> .
+    
+    <https://hdt.examples/Time-Span/06FAB324-AC65-3529-A8D8-3789AD812296>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "18th Century"@en .
+    
+    <https://hdt.examples/Document/CYI/95AE6414-9429-3B31-83D9-97615D5B81E6>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E31_Document> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Priest Savvas, Life of St. John Lampadistis, Cyprus, 1640"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P128i_is_carried_by>
+                    <https://hdt.examples/Object/CYI/456DC499-2DAA-33A1-BF3E-A86304EB2383> .
+    
+    <https://dioptra.cyi.ac.cy/sites/360/lampadistis/>
+            a       <https://hdt/1.0.0/HC8_3D_Model> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "https://dioptra.cyi.ac.cy/sites/360/lampadistis/" ;
+            <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>
+                    <https://hdt.examples/Concept/360Panoramic> .
+    
+    <https://hdt.examples/MorphBuildingSection/CYI/9890E037-CAB7-39E1-8BCE-FD5F8DD88E46>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> , <http://www.ics.forth.gr/isl/CRMba/B2_Morphological_Building_Section> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "lampadistis_1509, St. John Lampadistis Chapel"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by>
+                    <https://hdt.examples/Event/Production/St.%20John%20Lampadistis%20Chapel> .
+    
+    <https://hdt.examples/Identifier/lampadistis_1509>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E42_Identifier> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Identifier lampadistis_1509" .
+    
+    <https://hdt.examples/Time-Span/ABD81BB6-A530-3674-A30B-EC1072A822F1>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "11th Century"@en .
+    
+    <https://hdt.examples/Concept/3D>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel>
+                    "3D"@en .
+    
+    <https://hdt.examples/Object/CYI/A461AA67-A74E-31F0-A964-C94BAF02DAF4>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Frescoes, lampadistis_1509"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P124i_was_transformed_by>
+                    <https://hdt.examples/Event/Transformation/Frescoes%2C%20lampadistis_1509> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>
+                    <https://hdt.examples/Concept/CYI/Frescoes> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P3_has_note>
+                    "Wall Frescoes of the Latin Chapel"@en .
+    
+    <https://hdt.examples/Object/CYI/456DC499-2DAA-33A1-BF3E-A86304EB2383>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Priest Savvas, Manuscript"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P44_has_condition>
+                    <https://hdt.examples/CYI/ConditionState/B578B733-CBB7-38FC-AAD2-08314D2C4C2B> .
+    
+    <https://hdt.examples/Image/B0CD544D-2804-35B3-AD32-1D3F0F143ED6>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E36_Visual_Item> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "lampadistis_1509.jpg"@en .
+    
+    <https://hdt.examples/Event/Transformation/Graffiti%2C%20lampadistis_1509>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E81_Transformation> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Graffiti, lampadistis_1509"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>
+                    <https://hdt.examples/Time-Span/06FAB324-AC65-3529-A8D8-3789AD812296> .
+    
+    <https://hdt.examples/BuitWork/86FC9253-19F0-37FF-8E92-88E33481E52F>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E19_Physical_Object> , <https://hdt/1.0.0/HC3_Tangible_Aspect> , <http://www.ics.forth.gr/isl/CRMba/B1_Built_Work> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Katholicon" ;
+            <http://www.cidoc-crm.org/cidoc-crm/P2_has_type>
+                    <https://hdt.examples/Concept/Katholicon> ;
+            <http://www.cidoc-crm.org/cidoc-crm/P56_bears_feature>
+                    <urn:uuid:6b0bf889-886b-4e63-8ec5-7b030f0dec62> ;
+            <http://www.ics.forth.gr/isl/CRMba/BP1i_has_section>
+                    <https://hdt.examples/MorphBuildingSection/CYI/C33EDCB6-0E27-3FE0-AC48-F550D486E8DA> , <https://hdt.examples/MorphBuildingSection/CYI/9890E037-CAB7-39E1-8BCE-FD5F8DD88E46> , <https://hdt.examples/MorphBuildingSection/CYI/5A97D8A3-E4F2-375D-92B5-67B638120B4F> .
+    
+    <https://hdt.examples/Concept/CYI/Frescoes>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel>
+                    "Frescoes"@en .
+    
+    <https://hdt.examples/Concept/Katholicon>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel>
+                    "Katholicon"@en .
+    
+    <https://hdt.examples/Time-Span/D9B49888-08D8-3780-BDD9-AF4D7A75C0ED>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "15th Century"@en .
+    
+    <https://hdt.examples/Event/Production/Latin%20Chapel>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E12_Production> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Production of Latin Chapel"@en ;
+            <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span>
+                    <https://hdt.examples/Time-Span/D9B49888-08D8-3780-BDD9-AF4D7A75C0ED> .
+    
+    <https://hdt.examples/CYI/ConditionState/B578B733-CBB7-38FC-AAD2-08314D2C4C2B>
+            a       <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+            <http://www.w3.org/2000/01/rdf-schema#label>
+                    "Lost"@en .
+}
